@@ -1,0 +1,47 @@
+/*!
+Theme Name: Weidenhammer Creative Base Theme
+Author: Weidenhammer Creative
+Author URI: http://weidenhammercreative.com
+*/
+
+// Compass
+@import "compass/css3";
+@import "compass/functions";
+
+// Reset, Grid System
+@import "base/reset";
+@import "bourbon/bourbon";
+
+// $sprite-layout:smart;
+// @import "sprite/*.png";
+
+// Variables must be loaded before the grid to override grid settings
+@import "mixins/variables";
+
+// Grid
+@import "neat/neat";
+
+// Mixins
+@import "mixins/custom-mixins";
+
+// General Styling
+@import "partials/fonts";
+@import "partials/globals";
+@import "partials/header";
+@import "partials/navigation";
+@import "partials/front-page";
+@import "partials/carousel";
+@import "partials/page";
+@import "partials/forms";
+@import "partials/galleries";
+@import "partials/footer";
+@import "partials/magnific";
+@import "partials/multi-slider";
+
+@import "partials/browser-fixes";
+
+// Page / Post / Ect - Specific
+// @import "partials/page-home";
+
+// Responsive
+@import "partials/responsive";

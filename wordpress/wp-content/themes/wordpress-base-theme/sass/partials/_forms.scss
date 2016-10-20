@@ -1,0 +1,547 @@
+// Form Background
+$color1: $white;
+
+// Under-input labels
+$color2: darken($white,25%);
+
+// Input Background
+$color3: $white;
+
+// Input text color
+$color4: $black;
+
+// Label color
+$color5: $black;
+
+// Select arrow color, bullet/radio color, background of submit button
+$color6: $black;
+
+// Break into label and input on their own 100% lines
+$break1: 759px;
+
+// Break triple and double inputs into their own 100% lines
+$break2: 559px;
+
+.gform_footer{
+    button,input[type=submit]{
+        padding:15px 50px;
+        display:block;
+        background:$color6;
+        color:#FFFFFF;
+    }
+}
+.honeypot {
+    display: none;
+}
+
+.gform_wrapper {
+    position: relative;
+
+    img{
+        padding:0;
+    }
+
+    .gform_fields{
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+
+    .gform_button {
+        border:none;
+        outline:none;
+    }
+
+    .ginput_container{
+        margin-top:0 !important;
+
+        *{
+            width:100%;
+        }
+    }
+}
+
+#main .gform_wrapper{
+    background:$color1;
+    padding:15px;
+    border:2px darken($color1,5%) solid;
+    margin:30px auto;
+    width:100%;
+    max-width:100%;
+
+    form.newsletter-form .gfield:first-child{
+        display:none;
+    }
+
+    .gform_heading{
+        margin:0 0 30px;
+    }
+
+    .gform_title{
+        margin-top:0;
+        font-size:em(36,$fs);
+    }
+
+    .gform_body{
+        margin:0;
+    }
+
+    .validation_error{
+        margin:30px 0 0;
+        font-size:em(14,$fs);
+        line-height:em(26,$fs);
+        letter-spacing:1px;
+        color:red;
+        border:none;
+        background:transparent;
+    }
+
+    .gform_footer,
+    .gform_page_footer{
+        margin:30px 0 0;
+        padding-left:26%;
+    }
+
+    .gform_footer{
+        button{
+            font-size:2em;
+        }
+    }
+
+    .gfield{
+        @include afterclear;
+        overflow:hidden;
+        padding:0;
+        border:none;
+        background:none;
+
+        &:not(:first-child){
+            margin:15px 0 0;
+        }
+
+        &:before {
+            display: none;
+        }
+
+        &.gfield_error{
+            border:none;
+            background:transparent;
+            width:100%;
+
+            .gfield_label{
+                color:$color2;
+                margin-left:0;
+            }
+
+            .ginput_container{
+                margin:0;
+            }
+        }
+
+        .gfield_description{
+            display:block;
+            font-size:em(13,$fs);
+            line-height:1.5em;
+            margin:5px 0 0 5px;
+            font-style: italic;
+            color:darken($color1,25%);
+
+            &.validation_message{
+                color:red;
+            }
+        }
+
+        > label{
+            color:$color5;
+            font-size:em(16,$fs);
+            float:left;
+            width:25%;
+            font-weight: 600;
+            padding:10px 0 0;
+
+            .gfield_required{
+                color:red;
+                margin-left:3px;
+            }
+        }
+
+        > .ginput_container,
+        .clear-multi{
+            float:right;
+            width:74%;
+
+            span{
+                float:left;
+            }
+
+            label{
+                display:block;
+                font-size:em(13,$fs);
+                line-height:1em;
+                margin:5px 0 0 5px;
+                font-style: italic;
+                color:$color2;
+            }
+        }
+
+        input{
+            width:100% !important;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        select,
+        textarea{
+            color:$color4;
+            border:none;
+            background:$color3;
+            padding:15px 10px;
+            font-size:em(16,$fs);
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+
+        textarea{
+            width:100% !important;
+            height:125px;
+        }
+
+        select{
+            padding-top:12px;
+            padding-bottom:11px;
+            -webkit-appearance: none;
+            width:105% !important;
+        }
+
+        select:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        }
+
+        textarea{
+            resize:vertical;
+        }
+
+        &.time{
+            .ginput_container_time{
+                float:left;
+                overflow:hidden;
+                width:32.66%;
+
+                &:not(:first-child){
+                    margin-left:1%
+                }
+
+                i{
+                    display:none;
+                }
+            }
+            select{
+                width:110% !important;
+            }
+        }
+
+        &.list{
+            table{
+                width:100% !important;
+            }
+            tr{
+                td{
+                    padding:0;
+                }
+                &:not(:first-child){
+                    td{
+                        padding:5px 0 0;
+                    }
+                }
+                &:hover{
+                    td{
+                        background:transparent;
+                    }
+                }
+            }
+            img{
+                display:block;
+                border:none;
+                margin:5px auto !important;
+                width:16px !important;
+                height:16px !important;
+                background-size:16px 16px !important;
+            }
+        }
+
+        &.select,
+        .address_country,
+        .ginput_container_time:last-child{
+            position: relative;
+
+            &:before{
+                display:block;
+                background:transparent;
+                top: 25px;
+                right: 20px;
+                left:auto;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(0, 0, 0, 0);
+                border-top-color: $color6;
+                border-width: 10px;
+                @include border-radius(0);
+            }
+        }
+
+        &.name{
+            > .ginput_container{
+                span{
+                    width:49.5%;
+                    float:left;
+                    margin:0;
+
+                    &:not(:first-child){
+                        margin-left:1%;
+                    }
+                }
+            }
+        }
+
+        &.address{
+            .ginput_complex{
+                input{
+                    width:100% !important;
+                }
+                select{
+                    -webkit-appearance: none;
+                    width:105% !important;
+                }
+            }
+            > .ginput_container{
+                span:not(:first-child){
+                    margin-top:15px;
+                }
+                span.address_city{
+                    clear:both;
+                    width:32.66%;
+                }
+                span.address_state{
+                    width:32.66%;
+                    margin-left:1%;
+                }
+                span.address_zip{
+                    width:32.66%;
+                    float:right;
+                }
+                span.address_country{
+                    width:100%;
+                    margin-left:0;
+                }
+            }
+        }
+
+        &.radio,&.checkbox{
+            > .ginput_container{
+                > ul{
+                    @include afterclear;
+                    list-style:none;
+                    margin:10px 0 0;
+                    padding:0;
+
+                    li{
+                        @include afterclear;
+                        width:100%;
+                        border:none;
+                        background:none;
+
+                        &:not(:first-child){
+                            margin-top:5px;
+                        }
+                    }
+                }
+                input{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    z-index:-100;
+                    width:1px;
+                    height:1px;
+                    overflow:hidden;
+                    border:none;
+                    outline:none;
+                    background:transparent;
+                    pointer-events:none;
+                }
+                input[type=checkbox]{
+                    &:checked{
+                        + label{
+                            &:after{
+                                content:"✓";
+                                color:$color6;
+                                font-style:normal;
+                                font-size:24px;
+                                line-height:5px;
+                                text-indent:-3px;
+                            }
+                        }
+                    }
+                }
+
+                input[type=radio]{
+                    &:checked{
+                        + label{
+                            &:after{
+                                border-color:darken($color6,10%);
+                                background:$color6;
+                            }
+                        }
+                    }
+
+                    + label{
+
+                        &:before{
+                            @include border-radius(21px);
+                        }
+
+                        &:after{
+                            @include border-radius(11px);
+                        }
+                    }
+                }
+                label{
+                    font-size:em(16,$fs);
+                    height:50px;
+                    line-height:50px;
+                    position: relative;
+                    padding-left:35px;
+
+                    &:hover{
+                        cursor:pointer;
+                    }
+
+                    &:before{
+                        content:"";
+                        width:21px;
+                        height:21px;
+                        display:block;
+                        background:#FFFFFF;
+                        border:1px darken(#FFFFFF,20%) solid;
+                        position: absolute;
+                        top:50%;
+                        left:0;
+                        @include transform(translateY(-50%));
+                    }
+
+                    &:after{
+                        content:"";
+                        width:11px;
+                        height:11px;
+                        display:block;
+                        background:darken(#FFFFFF,10%);
+                        border:1px darken(#FFFFFF,15%) solid;
+                        position: absolute;
+                        top:50%;
+                        left:5px;
+                        @include transform(translateY(-50%));
+                    }
+                }
+            }
+        }
+    }
+
+    .gf_progressbar_wrapper{
+        position: absolute;
+        top:15px;
+        right:15px;
+
+        h3{
+            color:$color2;
+            font-size:.75em;
+        }
+    }
+
+    .gf_progressbar{
+        display:none;
+    }
+}
+
+.gform_confirmation_message{
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.875em;
+    padding:15px;
+    background:$color1;
+    border:2px darken($color1,5%) solid;
+}
+
+@media (max-width:$break1){
+    #main{
+        .gform_wrapper{
+            .gfield{
+                > label{
+                    width:100%;
+                }
+
+                &.select{
+                    &:before{
+                        top: 72px;
+                    }
+                }
+                .address_country,
+                .ginput_container_time:last-child{
+
+                    &:before{
+                        top: 23px;
+                    }
+                }
+
+                > .ginput_container,
+                .clear-multi{
+                    width:100%;
+                }
+            }
+
+            .gform_footer{
+                padding-left:0;
+            }
+        }
+    }
+}
+
+@media (max-width:$break2){
+    #main{
+        .gform_wrapper{
+            .gfield{
+                &.address{
+                    > .ginput_container{
+                        span{
+                            width:100% !important;
+                            margin-left:0 !important;
+                        }
+                    }
+                }
+                &.time{
+                    .ginput_container_time{
+                        width:100% !important;
+                        margin-left:0 !important;
+
+                        &:not(:first-child){
+                            margin:15px 0 0 !important;
+                        }
+                    }
+                }
+                &.name{
+                    > .ginput_container{
+                        span{
+                            width:100% !important;
+                            float:left;
+                            margin:15px 0 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

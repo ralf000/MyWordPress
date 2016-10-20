@@ -1,0 +1,1446 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pos",
+				"pos:r	position:relative"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"ease",
+				"ease-in-out"
+			],
+			[
+				"eas",
+				"ease-in-out"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"brea",
+				"break-word"
+			],
+			[
+				"whit",
+				"white-space"
+			],
+			[
+				"id",
+				"append_id"
+			],
+			[
+				"the",
+				"theloop	theloop"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"he",
+				"header-container"
+			],
+			[
+				"cmb_meta_box",
+				"cmb_Meta_Box_field"
+			],
+			[
+				"styl",
+				"stylesheet_directory"
+			],
+			[
+				"transfo",
+				"transform-origin"
+			],
+			[
+				"network",
+				"network_home_url"
+			],
+			[
+				"page",
+				"page_for_posts"
+			],
+			[
+				"is_sing",
+				"is_singular"
+			],
+			[
+				"breac",
+				"breadcrumb401_trail"
+			],
+			[
+				"short",
+				"shortcode_atts"
+			],
+			[
+				"wp_attachment_img",
+				"wp_get_attachment_image"
+			],
+			[
+				"regi",
+				"region_term"
+			],
+			[
+				"topL",
+				"topLevelNav"
+			],
+			[
+				"setO",
+				"setOptions"
+			],
+			[
+				"trail",
+				"trail_section"
+			],
+			[
+				"site",
+				"siteURL"
+			],
+			[
+				"na",
+				"normalizePath"
+			],
+			[
+				"link",
+				"linkPattern"
+			],
+			[
+				"norma",
+				"normalizePath"
+			],
+			[
+				"get_hom",
+				"get_home_url"
+			],
+			[
+				"mouse",
+				"mouseOutHandler"
+			],
+			[
+				"click",
+				"clickHandler"
+			],
+			[
+				"wp_send",
+				"wp_send_json_error"
+			],
+			[
+				"is_",
+				"is_null"
+			],
+			[
+				"buil",
+				"build_array"
+			],
+			[
+				"updated",
+				"updated_postmeta"
+			],
+			[
+				"priv",
+				"privateMethod"
+			],
+			[
+				"get_templ",
+				"get_template_part"
+			],
+			[
+				"is_sin",
+				"is_singular"
+			],
+			[
+				"post",
+				"post_id"
+			],
+			[
+				"mou",
+				"mouseOutHandler"
+			],
+			[
+				"wp_sen",
+				"wp_send_json_success"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"is_n",
+				"is_numeric"
+			],
+			[
+				"trailh",
+				"trailheadInfo"
+			],
+			[
+				"map",
+				"mapitem"
+			],
+			[
+				"object",
+				"object_id"
+			],
+			[
+				"obj",
+				"obj_type"
+			],
+			[
+				"curr",
+				"current"
+			],
+			[
+				"scro",
+				"scrollAccordion"
+			],
+			[
+				"new",
+				"newscroll"
+			],
+			[
+				"coor",
+				"coordinate_fields"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"togg",
+				"toggleEditable"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_script"
+			],
+			[
+				"obje",
+				"objectid"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"attach",
+				"attachHandlers"
+			],
+			[
+				"stro",
+				"strokeOpacity"
+			],
+			[
+				"strok",
+				"strokeOpacity"
+			],
+			[
+				"status",
+				"statuses"
+			],
+			[
+				"acti",
+				"activities"
+			],
+			[
+				"attra",
+				"attraction_args"
+			],
+			[
+				"sec",
+				"section_attractions"
+			],
+			[
+				"prev",
+				"prev_post"
+			],
+			[
+				"nex",
+				"next_post"
+			],
+			[
+				"res",
+				"results_class"
+			],
+			[
+				"maps",
+				"maps401"
+			],
+			[
+				"mapi",
+				"mapitems"
+			],
+			[
+				"mous",
+				"mouseOverHandler"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"mark",
+				"markercolors"
+			],
+			[
+				"ob",
+				"object_id"
+			],
+			[
+				"objec",
+				"object_type"
+			],
+			[
+				"scr",
+				"scripts_loaded"
+			],
+			[
+				"field",
+				"field_args"
+			],
+			[
+				"title",
+				"titlefield"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"script",
+				"scripts_added"
+			],
+			[
+				"is_nu",
+				"is_numeric"
+			],
+			[
+				"esc_a",
+				"esc_attr_e"
+			],
+			[
+				"wp_enqu",
+				"wp_enqueue_script"
+			],
+			[
+				"get_sty",
+				"get_stylesheet_directory_uri"
+			],
+			[
+				"path",
+				"pathbounds"
+			],
+			[
+				"lat",
+				"LatLngBounds"
+			],
+			[
+				"trai",
+				"trail_sections"
+			],
+			[
+				"co",
+				"console	Console log"
+			],
+			[
+				"get_tem",
+				"get_template_directory"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"cal",
+				"calculate_distance"
+			],
+			[
+				"jso",
+				"jsonfile"
+			],
+			[
+				"stau",
+				"status_terms"
+			],
+			[
+				"coo",
+				"coordinates"
+			],
+			[
+				"strr",
+				"str_replace"
+			],
+			[
+				"coord",
+				"coordfield"
+			],
+			[
+				"toggle",
+				"toggleDisabled"
+			],
+			[
+				"get_template",
+				"get_template_directory_uri"
+			],
+			[
+				"ajax",
+				"ajax_post"
+			],
+			[
+				"aj",
+				"ajax_post"
+			],
+			[
+				"__retur",
+				"__return_empty_string"
+			],
+			[
+				"mar",
+				"markets"
+			],
+			[
+				"ma",
+				"markets"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"incl",
+				"include_id"
+			],
+			[
+				"may",
+				"maybe_update"
+			],
+			[
+				"data",
+				"datarows"
+			],
+			[
+				"db",
+				"dbrows"
+			],
+			[
+				"get_o",
+				"get_object_vars"
+			],
+			[
+				"las",
+				"last_error"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"ac",
+				"ac_input"
+			],
+			[
+				"ope",
+				"openInfoWindow"
+			],
+			[
+				"img",
+				"imgregex"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"print",
+				"print_r	Pre Print R"
+			],
+			[
+				"set",
+				"setHeights"
+			],
+			[
+				"sty",
+				"stylesheet_directory"
+			],
+			[
+				"is_user",
+				"is_user_logged_in"
+			],
+			[
+				"conf",
+				"confirmation_url"
+			],
+			[
+				"pri",
+				"print_r	Print Preformatted"
+			],
+			[
+				"strrep",
+				"str_replace"
+			],
+			[
+				"wp_enqueue",
+				"wp_enqueue_style"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"scrol",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"gfo",
+				"gform-popup"
+			],
+			[
+				"wrap",
+				"wrapAll	wrapAll"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 203.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"oackage",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"package c",
+				"Package Control: Add Repository"
+			],
+			[
+				"",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			],
+			[
+				"gis",
+				"Gist: Insert Gist"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"snipped",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"tidy",
+				"TidyHTML"
+			],
+			[
+				"tid",
+				"Tidy PHP"
+			],
+			[
+				"snippetma",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"snippetm",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"snip",
+				"Snippet: Register Post Type All Options"
+			],
+			[
+				"fet",
+				"Fetch: Manage"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"gi",
+				"Gist: Insert Gist"
+			],
+			[
+				"loo",
+				"Snippet: The Loop"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"trai",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"tr",
+				"Trailing Spaces: Toggle Trailing Spaces Highlighting"
+			],
+			[
+				"ipsu",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"css",
+				"Csslisible : Run"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"Snippet: ",
+				"Snippet: $LABEL"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/functions.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/js/wsc-scripts.js",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/custom_data/services/init.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/sass/mixins/_variables.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/front-page.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/archive-seminar.php",
+		"/Users/dev1/Desktop/Sites/__REPOS/wordpress-base-theme/sass/mixins/_custom-mixins.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/sass/wsc-style.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/sass/mixins/_custom-mixins.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/plugins/coordinated-health/services.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/single-service.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/single-premium-service.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/sass/compass/functions/_lists.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-config.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/index.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_page.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/style.css",
+		"/Users/dev1/Desktop/Sites/chplastics.dev/wordpress/wp-content/themes/chplastics/sass/partials/_flama.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/header.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/header.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/templates/loop-article.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_forms.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/templates/loop-doctor.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/footer.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/js/partials/_scripts.js",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_old_quiz_form.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/functions.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_blog.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/page-quiz-end.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/fonts/ch.woff",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_fonts-fontello.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_header.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_timeline.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_mq.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_doctor.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/library/custom-post-types.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/js/partials/_forms.js",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-includes/theme.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_globals.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/library/401functions.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_footer.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/templates/filter.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/js/partials/_blogfeed.js",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/js/partials/_expand.js",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_navigation.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/plugins/post-tags-and-categories-for-pages/post-tag.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/templates/title.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/mixins/_custom-mixins.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/style.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials/_front-page.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/js/forms.js",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/js/scripts.js",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css/forms.less",
+		"/Users/dev1/Desktop/php.ini",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css/ch435.less",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css/aotw.less",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css/aotw.css",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css/submit-story.css",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css/divof.css",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css/ch435.css",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/js/partials/_carousel.js",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/templates/featured.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/mixins/_variables.scss",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/index.php",
+		"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/.htaccess",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/skin/frontend/default/wengers/js/partials/scripts.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/skin/frontend/default/wengers/css/styles.css",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/skin/frontend/default/wengers/css/styles.css",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/skin/frontend/default/wengers/js/scripts.min.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/js/dull/noflashuploader.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/js/dull/uploader.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/code/local/Dull/Uploader/Block/Uploader.php",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/skin/frontend/default/wengers/js/scripts.min.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/skin/frontend/default/wengers/js/partials/dropdowns.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/skin/frontend/default/wengers/js/partials/responsive.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/skin/frontend/default/wengers/js/partials/dropdowns.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/catalog/product/view.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/catalog/product/view.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/wengers/default/template/catalog/product/view.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/wengers/sell-trade-in.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/core/Mage/Core/etc/config.xml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/motorcycle/skin/frontend/default/wengers/js/scripts.min.js",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/3columns.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/skin/frontend/default/wengers/styles.css",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/3columns.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/2columns-left.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/1column.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/2columns-right.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/cms-page.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/empty.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/homepage.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/1column.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/2columns-left.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/2columns-right.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/cms-page.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/empty.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/homepage.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/popup.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/print.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/script.php",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/manual-finder.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/engine-rebuild.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/engine-rebuild-form.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/engine-finder.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/popup.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/print.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/script.php",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/html/header.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/catalog/category/view.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/callouts/left_col.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/callouts/left_col.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/catalog/category/view.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/catalog/category/construction.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/catalog/category/view.phtml_bk_3_sep",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/catalog/product/list.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/local/Wengers/SellTradeIn/controllers/IndexController.php",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/local/Wengers/PartsPriceQuote/controllers/IndexController.php",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/page/html/footer.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page/html/footer.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/adminhtml/default/default/template/cms/browser/content/uploader.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/persistent/customer/form/login.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/checkout/onepage/shipping_method/available.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/local/Wengers/TruckFreight/etc/system.xml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/core/Mage/Adminhtml/Block/Sales/Order/Create/Shipping/Method/Form.php",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/core/Mage/Checkout/Block/Multishipping/Shipping.php",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/checkout/cart/shipping.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/checkout/multishipping/shipping.phtml",
+		"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/base/default/template/checkout/onepage/shipping_method/available.phtml"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 160.0,
+		"where_history":
+		[
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/sass/partials",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016/js",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/coordinated-health2016",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css",
+			"*.scss,/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css",
+			"<current file>",
+			"/Users/dev1/Desktop/Sites/coordinatedhealth.dev/wp-content/themes/ch/css",
+			"*.scss,<open folders>",
+			"<open folders>",
+			"<open files>",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/local/Wengers",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew",
+			"<open folders>",
+			"<open files>",
+			"<open folders>",
+			"<current file>",
+			"<open folders>",
+			"<open files>",
+			"<open folders>",
+			"<open files>",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/locale/en_US/template/email",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers",
+			"<current file>",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/skin/frontend/default/wengers/js",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page",
+			"<open folders>",
+			"<current file>",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/local/Wengers",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/template/page",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/locale/en_US/template/email",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/locale/en_US/template/email/sales",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/locale/en_US/template/email",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/wengers/locale/en_US/template/email",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/design/frontend/default/russellsnew/locale/en_US/template/email",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/core/Mage/Checkout",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew/app/code/core/Mage/Checkout",
+			"<open folders>",
+			"<current file>",
+			"<open folders>",
+			"*.css,<open folders>",
+			"*.css,,<open folders>",
+			"<current file>",
+			"*.phtml,<open folders>",
+			"<open folders>",
+			"*.phtml,<open folders>",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers",
+			"<open folders>",
+			"*.phtml,<open folders>",
+			"*.xml,<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template/catalog/product",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/wholegoodsnew/app/design/frontend/default/wengers/template",
+			"<open folders>",
+			"*.xml,<open folders>",
+			"<open folders>",
+			"*.xml,<open folders>",
+			"*.phtml,<open folders>",
+			"*.js,<open folders>",
+			"*.xml,<open folders>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew",
+			"<open folders>",
+			"<current file>",
+			"/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew",
+			"<open folders>",
+			"*.php,<open folders>",
+			"*.xml,<open folders>",
+			"<open folders>",
+			"*.xml,/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew",
+			"*.xml,<open folders>",
+			"<open folders>",
+			"*.xml,<open folders>",
+			"*.phtml,<open folders>",
+			"*.xml,<open folders>",
+			"*.xml,/Users/dev1/Desktop/Sites/wengers-git.dev/partsnew",
+			"*.xml,<open folders>",
+			"*.php,<open folders>",
+			"*.xml,<open folders>",
+			"*.phtml,<open folders>",
+			"<open folders>",
+			"*.phtml,<open folders>",
+			"*.php,<open folders>",
+			"*.phtml,<open folders>",
+			"*.xml,<open folders>",
+			"*.phtml,<open folders>",
+			"*.scss,<open folders>",
+			"<current file>",
+			"",
+			"<open folders>",
+			"*scss,<open folders>",
+			"*scss<open folders>",
+			"*.scss<open folders>",
+			"<open folders>",
+			"<current file>",
+			"<open files>",
+			"<open folders>",
+			"<current file>",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/lvgp.dev/wp-content/themes/lvgp2015/library/metabox",
+			"<open folders>",
+			"*js,<open folders>",
+			"*css,<open folders>",
+			"<open folders>",
+			"*scss,<open folders>",
+			"<open folders>",
+			"/Users/dev1/Desktop/Sites/fusionchefsousvide.com (LIVE)/app/code/local/Amasty",
+			"/Users/dev1/Desktop/Sites/fusionchefsousvide.com (LIVE)/app/code/",
+			"/Users/dev1/Desktop/Sites/fusionchefsousvide.com (LIVE)/app/code/core/Mage/Shipping"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"45",
+			"('../font",
+			"add_image",
+			"Image",
+			"photos",
+			"premium service fields",
+			"style",
+			"register_post_type",
+			"service",
+			"ch.dev.10.176.230.65.xip.io",
+			"rad-preloader",
+			"ga('create'",
+			"header-small",
+			".phone",
+			" .",
+			".phone",
+			"gfield",
+			"gformInitSpinner",
+			"gform",
+			"h3",
+			"27312809",
+			"‘",
+			"phone-mobile",
+			"post-type-archive-doctor",
+			"related_posts",
+			"related",
+			"loading-replace",
+			"|[^",
+			"a-z0-9",
+			"google_analytics_id_401",
+			"google_analytics",
+			"');\n",
+			"dashicons",
+			"loadPage",
+			"offset(",
+			"team-you-trust",
+			"'any'",
+			"\"any\"",
+			"'any'",
+			"posts_where",
+			"pre_get_posts",
+			"related_content",
+			"feed-wrap",
+			"article",
+			"feed-wrap",
+			"Pain",
+			"cmb_video",
+			"video",
+			"image",
+			"Video",
+			"seminar",
+			"seminars",
+			"description_below",
+			"pain-area",
+			"gfield_radio",
+			"14px",
+			"6px",
+			"gfield_radio",
+			"img",
+			";\n",
+			".gfield",
+			"16px",
+			"gfield",
+			".section",
+			"h3",
+			"gfield_radio",
+			"gfield_desc",
+			"font-size:em",
+			"flama_m",
+			"font-size:em(16,$fs);",
+			"flama_m",
+			"gform_wrapper",
+			"float:none",
+			"li {",
+			"gf",
+			"inline-block",
+			"flama_m",
+			"gfield_radio",
+			"type=\"radio\"",
+			"type=",
+			".gfield_radio",
+			"display:none",
+			"background-color",
+			"orange",
+			".flama_m",
+			"~",
+			"@ch_orange",
+			".gf",
+			"section",
+			".filter",
+			"filter",
+			"feed-wrap",
+			"blogFeed",
+			"images",
+			"; ",
+			"$",
+			"touch",
+			"badge",
+			".badge",
+			"$",
+			"nav",
+			"var nav",
+			"main_nav",
+			"var nav",
+			"touch",
+			"product-name",
+			"-50px",
+			"ident_sales",
+			"www.twitter.com",
+			"touch",
+			"px",
+			"diamond",
+			"dt",
+			".carousel dt",
+			".carousel dd",
+			".carousel dl",
+			".carousel dt",
+			".carousel dd",
+			"carousel dl",
+			"carousel",
+			"dl",
+			"resetLandingImages",
+			"$",
+			"sameheight",
+			"sub_left img",
+			"typekit",
+			"block_name",
+			"category_left"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$orange",
+			".carousel ul li",
+			".carousel ul",
+			".carousel li",
+			"carousel ul",
+			"<strong>251 South Race St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 717.866.6656<br />\n                                        M-F 7:30am-5pm,<br />\n                                        Sat 7:30am-12pm<br /><br />",
+			"<strong>814 South College St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 800.451.5240<br />\n                                        M-F 7:30am-5pm,<br />\n                                        Sat 7:30am-12pm<br /><br />",
+			"251 South Race St",
+			"</label>",
+			"var url='<?php echo Mage::getUrl('',array('_secure'=>isset($_SERVER['HTTPS'] ))).'catalog/index/Getsubcat'?>';",
+			"var url='<?php echo Mage::getUrl('',array('_secure'=>true)).'catalog/index/Getsubcat'?>';",
+			"<script src=\"https://code.jquery.com/jquery-latest.min.js\" type=\"text/javascript\"></script>",
+			"<!-- FOOTER -->\n                <table cellpadding=\"0\" cellspacing=\"0\" style=\"font-size:.9em;color:#352d19;\" data-logo-alt=\"{{var logo_alt}}\">\n                    <tr class=\"hide_russells\"><td colspan=\"3\" width=\"600\"><img src=\"{{skin url=\"/images/emails/our-locations.png\" _area='frontend'}}\" width=\"600\" height=\"51\" alt=\"Our Locations\" /></td></tr>\n                    <tr class=\"hide_russells\"><td colspan=\"3\" height=\"5\"></td></tr>\n                    <tr class=\"hide_russells\">\n                        <td width=\"15\"></td>\n                        <td>\n                            <table width=\"570\" cellpadding=\"0\" cellspacing=\"0\">\n                                <tr>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>831 South College St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 800.552.5080<br />\n                                        M-F 7:30am-5pm,<br />\n                                        Sat 7:30am-12pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/contact\">Administrative Office</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/construction-equipment\">Construction Equipment</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/construction-parts\">Construction Parts</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/motorcycles\">Motorcycles Sales</a>\n                                    </td>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>814 South College St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 800.451.5240<br />\n                                        M-F 9am-6pm,<br />\n                                        Sat 10am-3pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/agriculture\">Agriculture Sales</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/trailers\">Trailer Sales</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/tractors\">Tractor Parts</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/skid-loaders\">Skid Loader Parts</a>\n                                    </td>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>215 South Race St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 717.866.6656<br />\n                                        M-F 9am-6pm,<br />\n                                        Sat 11am-4pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/machining-services\">Machine Shops</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/engine-rebuilds\">Engine Rebuilds</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/wenger-farms\">Wenger Farms</a>\n                                    </td>\n                                </tr>\n                            </table>\n                        </td>\n                        <td width=\"15\"></td>\n                    </tr>\n                    <tr class=\"hide_russells\"><td colspan=\"3\" height=\"15\"></td></tr>\n                    <tr class=\"footer_color\"><td colspan=\"3\" height=\"10\"></td></tr>\n                    <tr class=\"footer_color\">\n                        <td width=\"15\"></td>\n                        <td width=\"570\" style=\"color:#FFFFFF;\">&copy; 2015 {{var store.getFrontendName()}}</td>\n                        <td width=\"15\"></td>\n                    </tr>\n                    <tr class=\"footer_color\"><td colspan=\"3\" height=\"10\"></td></tr>\n                </table>",
+			".toolbar .pager,\n.pager-no-toolbar",
+			"<?php /* Open Graph Protocol for Facebook and SEO START */ ?>\n    <?php if(Mage::registry('current_product')): ?>\n     <?php $product = Mage::registry('current_product'); ?>\n     <meta property=\"og:title\" content=\"<?php echo ($product->getName()); ?>\" />\n     <meta property=\"og:type\" content=\"product\" />\n     <meta property=\"og:image\" content=\"<?php echo $this->helper('catalog/image')->init($product, 'small_image')->resize(200,200);?>\" />\n     <meta property=\"og:url\" content=\"<?php echo Mage::registry('product')->getProductUrl(); ?>\" />\n     <meta property=\"og:description\" content=\"<?php echo strip_tags(($product->getDescription())); ?>\" />\n     <meta property=\"og:site_name\" content=\"<?php echo Mage::app()->getStore()->getName(); ?>\" />\n    <?php elseif(Mage::registry('current_category')): ?>\n     <meta property=\"og:title\" content=\"<?php echo $this->getTitle() ?>\" />\n     <meta property=\"og:type\" content=\"product.group\" />\n     <meta property=\"og:url\" content=\"<?php echo $this->helper('core/url')->getCurrentUrl();?>\" />\n     <meta property=\"og:description\" content=\"<?php echo strip_tags($this->getDescription()) ?>\" />\n     <meta property=\"og:site_name\" content=\"<?php echo Mage::app()->getStore()->getName(); ?>\" />\n    <?php elseif((Mage::getSingleton('cms/page')->getIdentifier() == 'home' &&\n     Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms')) : ?>\n     <meta property=\"og:title\" content=\"<?php echo $this->getTitle() ?>\" />\n     <meta property=\"og:type\" content=\"website\" />\n     <meta property=\"og:url\" content=\"<?php echo $this->helper('core/url')->getCurrentUrl();?>\" />\n     <meta property=\"og:description\" content=\"<?php echo strip_tags($this->getDescription()) ?>\" />\n     <meta property=\"og:site_name\" content=\"<?php echo Mage::app()->getStore()->getName(); ?>\" />\n    <?php else: ?>\n     <meta property=\"og:title\" content=\"<?php echo $this->getTitle() ?>\" />\n     <meta property=\"og:type\" content=\"article\" />\n     <meta property=\"og:url\" content=\"<?php echo $this->helper('core/url')->getCurrentUrl();?>\" />\n     <meta property=\"og:description\" content=\"<?php echo strip_tags($this->getDescription()) ?>\" />\n     <meta property=\"og:site_name\" content=\"<?php echo Mage::app()->getStore()->getName(); ?>\" />\n    <?php endif; ?>\n    <?php /* Open Graph Protocol for Facebook and SEO END */ ?>\n</head>",
+			"<li class=\"item\">",
+			"<?php /* Open Graph Protocol for Facebook and SEO START */ ?>\n    <?php if(Mage::registry('current_product')): ?>\n     <?php $product = Mage::registry('current_product'); ?>\n     <meta property=\"og:title\" content=\"<?php echo ($product->getName()); ?>\" />\n     <meta property=\"og:type\" content=\"product\" />\n     <meta property=\"og:image\" content=\"<?php echo $this->helper('catalog/image')->init($product, 'small_image')->resize(200,200);?>\" />\n     <meta property=\"og:url\" content=\"<?php echo Mage::registry('product')->getProductUrl(); ?>\" />\n     <meta property=\"og:description\" content=\"<?php echo strip_tags(($product->getDescription())); ?>\" />\n     <meta property=\"og:site_name\" content=\"<?php echo Mage::app()->getStore()->getName(); ?>\" />\n    <?php elseif(Mage::registry('current_category')): ?>\n     <meta property=\"og:title\" content=\"<?php echo $this->getTitle() ?>\" />\n     <meta property=\"og:type\" content=\"product.group\" />\n     <meta property=\"og:url\" content=\"<?php echo $this->helper('core/url')->getCurrentUrl();?>\" />\n     <meta property=\"og:description\" content=\"<?php echo strip_tags($this->getDescription()) ?>\" />\n     <meta property=\"og:site_name\" content=\"<?php echo Mage::app()->getStore()->getName(); ?>\" />\n    <?php elseif((Mage::getSingleton('cms/page')->getIdentifier() == 'home' &&\n     Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms')) : ?>\n     <meta property=\"og:title\" content=\"<?php echo $this->getTitle() ?>\" />\n     <meta property=\"og:type\" content=\"website\" />\n     <meta property=\"og:url\" content=\"<?php echo $this->helper('core/url')->getCurrentUrl();?>\" />\n     <meta property=\"og:description\" content=\"<?php echo strip_tags($this->getDescription()) ?>\" />\n     <meta property=\"og:site_name\" content=\"<?php echo Mage::app()->getStore()->getName(); ?>\" />\n    <?php else: ?>\n     <meta property=\"og:title\" content=\"<?php echo $this->getTitle() ?>\" />\n     <meta property=\"og:type\" content=\"article\" />\n     <meta property=\"og:url\" content=\"<?php echo $this->helper('core/url')->getCurrentUrl();?>\" />\n     <meta property=\"og:description\" content=\"<?php echo strip_tags($this->getDescription()) ?>\" />\n     <meta property=\"og:site_name\" content=\"<?php echo Mage::app()->getStore()->getName(); ?>\" />\n    <?php endif; ?>\n    <?php /* Open Graph Protocol for Facebook and SEO END */ ?>\n</head>\n\n{{inlinecss file=\"email-inline.css\"}}",
+			"{{var non_inline_styles}}\n\n{{inlinecss file=\"email-inline.css\"}}",
+			"<!-- FOOTER -->\n                <table cellpadding=\"0\" cellspacing=\"0\" style=\"font-size:.9em;color:#352d19;\">\n                    {{if var logo_alt}}\n                    <tr><td colspan=\"3\" width=\"600\"><img src=\"{{skin url=\"/images/emails/our-locations.png\" _area='frontend'}}\" width=\"600\" height=\"51\" alt=\"Our Locations\" /></td></tr>\n                    <tr><td colspan=\"3\" height=\"5\"></td></tr>\n                    <tr>\n                        <td width=\"15\"></td>\n                        <td>\n                            <table width=\"570\" cellpadding=\"0\" cellspacing=\"0\">\n                                <tr>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>831 South College St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 800.552.5080<br />\n                                        M-F 7:30am-5pm,<br />\n                                        Sat 7:30am-12pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/contact\">Administrative Office</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/construction-equipment\">Construction Equipment</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/construction-parts\">Construction Parts</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/motorcycles\">Motorcycles Sales</a>\n                                    </td>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>814 South College St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 800.451.5240<br />\n                                        M-F 9am-6pm,<br />\n                                        Sat 10am-3pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/agriculture\">Agriculture Sales</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/trailers\">Trailer Sales</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/tractors\">Tractor Parts</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/skid-loaders\">Skid Loader Parts</a>\n                                    </td>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>215 South Race St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 717.866.6656<br />\n                                        M-F 9am-6pm,<br />\n                                        Sat 11am-4pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/machining-services\">Machine Shops</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/engine-rebuilds\">Engine Rebuilds</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/wenger-farms\">Wenger Farms</a>\n                                    </td>\n                                </tr>\n                            </table>\n                        </td>\n                        <td width=\"15\"></td>\n                    </tr>\n                    <tr><td colspan=\"3\" height=\"15\"></td></tr>\n                    {{/if}}\n                    <tr bgcolor=\"#{{if var logo_alt}}362e18{{else}}004273{{/if}}\"><td colspan=\"3\" height=\"10\"></td></tr>\n                    <tr bgcolor=\"#{{if var logo_alt}}362e18{{else}}004273{{/if}}\">\n                        <td width=\"15\"></td>\n                        <td width=\"570\" style=\"color:#FFFFFF;\">&copy; 2015 {{var store.getFrontendName()}}</td>\n                        <td width=\"15\"></td>\n                    </tr>\n                    <tr bgcolor=\"#{{if var logo_alt}}362e18{{else}}004273{{/if}}\"><td colspan=\"3\" height=\"10\"></td></tr>\n                </table>",
+			"<tr bgcolor=\"#{{if var logo_alt}}362e18{{else}}004273{{/if}}\">\n                        <td width=\"15\"></td>\n                        <td width=\"570\" style=\"color:#FFFFFF;\">&copy; 2015 {{var store.getFrontendName()}}</td>\n                        <td width=\"15\"></td>\n                    </tr>\n                    <tr bgcolor=\"#{{if var logo_alt}}362e18{{else}}004273{{/if}}\"><td colspan=\"3\" height=\"10\"></td></tr>",
+			"<tr bgcolor=\"#{{if var logo_alt}}362e18{{else}}004273{{/if}}\"><td colspan=\"3\" height=\"10\"></td></tr>",
+			"<table cellpadding=\"0\" cellspacing=\"0\" style=\"font-size:.9em;color:#352d19;\">\n                    {{if var logo_alt}}\n                    <tr><td colspan=\"3\" width=\"600\"><img src=\"{{skin url=\"/images/emails/our-locations.png\" _area='frontend'}}\" width=\"600\" height=\"51\" alt=\"Our Locations\" /></td></tr>\n                    <tr><td colspan=\"3\" height=\"5\"></td></tr>\n                    <tr>\n                        <td width=\"15\"></td>\n                        <td>\n                            <table width=\"570\" cellpadding=\"0\" cellspacing=\"0\">\n                                <tr>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>831 South College St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 800.552.5080<br />\n                                        M-F 7:30am-5pm,<br />\n                                        Sat 7:30am-12pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/contact\">Administrative Office</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/construction-equipment\">Construction Equipment</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/construction-parts\">Construction Parts</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/motorcycles\">Motorcycles Sales</a>\n                                    </td>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>814 South College St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 800.451.5240<br />\n                                        M-F 9am-6pm,<br />\n                                        Sat 10am-3pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/agriculture\">Agriculture Sales</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/wholegoodsnew/trailers\">Trailer Sales</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/tractors\">Tractor Parts</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/skid-loaders\">Skid Loader Parts</a>\n                                    </td>\n                                    <td style=\"vertical-align:top;\">\n                                        <strong>215 South Race St</strong><br />\n                                        Myerstown, PA 17067<br />\n                                        Call Us: 717.866.6656<br />\n                                        M-F 9am-6pm,<br />\n                                        Sat 11am-4pm<br /><br />\n                                        <strong>At this location:</strong><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/machining-services\">Machine Shops</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/engine-rebuilds\">Engine Rebuilds</a><br />\n                                        <a target=\"_blank\" href=\"http://prod.wengers.com/partsnew/wenger-farms\">Wenger Farms</a>\n                                    </td>\n                                </tr>\n                            </table>\n                        </td>\n                        <td width=\"15\"></td>\n                    </tr>\n                    <tr><td colspan=\"3\" height=\"15\"></td></tr>\n                    {{/if}}\n                    <tr bgcolor=\"#{{if var logo_alt}}362e18{{else}}004273{{/if}}\"><td colspan=\"3\" height=\"10\"></td></tr>\n                    <tr bgcolor=\"#{{if var logo_alt}}362e18{{else}}004273{{/if}}\">\n                        <td width=\"15\"></td>\n                        <td width=\"570\" style=\"color:#FFFFFF;\">&copy; 2015 {{var store.getFrontendName()}}</td>\n                        <td width=\"15\"></td>\n                    </tr>\n                    <tr bgcolor=\"#362e18\"><td colspan=\"3\" height=\"10\"></td></tr>\n                </table>",
+			"&copy; 2015 {{var store.getFrontendName()}}",
+			"<a href=\"{{store url=''}}\" target=\"_blank\">",
+			"{{store url=''}}",
+			"&copy; 2015 {{var store.getFrontendName()}}",
+			"{{skin url=\"/images/emails/our-locations.png\" _area='frontend'}}",
+			"{{skin url=\"/images/emails/social.png\" _area='frontend'}}",
+			"{{skin url=\"/images/emails/logo.png\" _area='frontend'}}",
+			"<a href=\"http://prod.russelltractorparts.com/partsnew/\" target=\"_blank\">",
+			"http://prod.russelltractorparts.com/partsnew/",
+			"partsnew/skin/frontend/default/russellsnew/images/emails",
+			"product_right .product_form",
+			"#product_right",
+			"partsnew/contact-us",
+			"/partsnew/contact-form?contactWho",
+			"Redirect 301",
+			"",
+			"video",
+			"$black",
+			"",
+			"wengers_categoryfields_setup",
+			"categoryfields",
+			"customcatfields",
+			"customcategory_fields",
+			"category_fields",
+			"url('../images/",
+			"src=\"/skin/frontend/default/wengers/images/",
+			"src=\"../images",
+			"../images",
+			"(..images/",
+			"'",
+			"$padding"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "_custom-mixins.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"funs",
+				"themes/dl2014/functions.php"
+			],
+			[
+				"_gm",
+				"themes/dl2014/js/partials/_gmap-scripts.js"
+			],
+			[
+				"scor",
+				"themes/dl2014/js/partials/_scroll-accordion.js"
+			],
+			[
+				"gmap",
+				"themes/dl2014/js/partials/_gmap-scripts.js"
+			],
+			[
+				"_scri",
+				"themes/dl2014/js/partials/_scripts.js"
+			],
+			[
+				"fun",
+				"themes/dl2014/functions.php"
+			],
+			[
+				"cus",
+				"themes/dl2014/library/custom-post-types.php"
+			],
+			[
+				"de",
+				"debug.log"
+			],
+			[
+				"_sc",
+				"themes/dl2014/js/partials/_scripts.js"
+			],
+			[
+				"func",
+				"themes/phillips2013/functions.php"
+			],
+			[
+				"head",
+				"themes/phillips2013/sass/partials/_header.scss"
+			],
+			[
+				"ins",
+				"themes/phillips2013/sass/partials/_inside.scss"
+			],
+			[
+				"var",
+				"themes/phillips2013/sass/mixins/_variables.scss"
+			],
+			[
+				"map",
+				"themes/phillips2013/js/partials/_map.js"
+			],
+			[
+				"pop",
+				"themes/phillips2013/sass/partials/_magnificPopup.scss"
+			],
+			[
+				"widgets",
+				"themes/phillips2013/sass/partials/_widgets.scss"
+			],
+			[
+				"widg",
+				"themes/phillips2013/sass/partials/_widgets.scss"
+			],
+			[
+				"funct",
+				"themes/phillips2013/functions.php"
+			],
+			[
+				"track",
+				"themes/phillips2013/js/partials/_tracks.js"
+			],
+			[
+				"trac",
+				"themes/phillips2013/images/fish-tracks.svg"
+			],
+			[
+				"themes",
+				"themes/phillips2013/sass/partials/_themes.scss"
+			],
+			[
+				"front-",
+				"themes/phillips2013/sass/partials/_front-page.scss"
+			],
+			[
+				"font",
+				"themes/phillips2013/sass/partials/_fonts.scss"
+			],
+			[
+				"foo",
+				"themes/phillips2013/footer.php"
+			],
+			[
+				"foot",
+				"themes/phillips2013/sass/partials/_footer.scss"
+			],
+			[
+				"fron",
+				"themes/phillips2013/sass/partials/_front-page.scss"
+			],
+			[
+				"wid",
+				"themes/phillips2013/sass/partials/_widgets.scss"
+			],
+			[
+				"function",
+				"themes/phillips2013/functions.php"
+			],
+			[
+				"form",
+				"themes/phillips2013/sass/partials/_forms.scss"
+			],
+			[
+				"fro",
+				"themes/phillips2013/sass/partials/_front-page.scss"
+			],
+			[
+				"fr",
+				"themes/phillips2013/sass/partials/_front-page.scss"
+			],
+			[
+				"globa",
+				"themes/phillips2013/sass/partials/_globals.scss"
+			],
+			[
+				"forms",
+				"themes/phillips2013/sass/partials/_forms.scss"
+			],
+			[
+				"foote",
+				"themes/phillips2013/sass/partials/_footer.scss"
+			],
+			[
+				"varia",
+				"themes/phillips2013/sass/mixins/_variables.scss"
+			],
+			[
+				"footer",
+				"themes/phillips2013/sass/partials/_footer.scss"
+			],
+			[
+				"cta",
+				"themes/phillips2013/template-parts/cta.php"
+			],
+			[
+				"40",
+				"themes/phillips2013/library/401functions.php"
+			],
+			[
+				"front",
+				"themes/phillips2013/sass/partials/_front-page.scss"
+			],
+			[
+				"them",
+				"themes/phillips2013/theme-settings.php"
+			],
+			[
+				"401",
+				"themes/phillips2013/library/401functions.php"
+			],
+			[
+				"asi",
+				"themes/jaindl2013/template-parts/aside-available-property.php"
+			],
+			[
+				"f",
+				"themes/jaindl2013/functions.php"
+			],
+			[
+				"global",
+				"themes/jaindl2013/.sass-cache/82e4378b066a76d7e23ea38a6318c7821244938f/_globals.scssc"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Work/Victaulic/SalesMap/App/victaulic-map.sublime-project"
+			],
+			[
+				"jain",
+				"/Users/hugeackman/Work/SublimeProjects/jaindl_ent.sublime-project"
+			],
+			[
+				"metall",
+				"/Users/hugeackman/Work/SublimeProjects/metallix-recycled.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 359.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

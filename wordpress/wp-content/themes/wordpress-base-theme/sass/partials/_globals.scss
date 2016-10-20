@@ -1,0 +1,90 @@
+html {
+}
+
+body{
+    margin:0;
+    padding:0;
+    color:$black;
+    font:normal #{$fs}px/1.5 Arial, san-serif;
+}
+
+* {
+    box-sizing:border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin-bottom:20px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size:em(36,$fs);
+}
+
+h3 {
+    font-size:em(20,$fs);
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+strong {
+    font-weight: strong;
+}
+
+a,
+a:visited {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+%container {
+    max-width: 980px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    padding:0 20px;
+
+    &.wide {
+        max-width:1400px;
+        padding:0;
+    }
+}
+
+.container {
+    @extend %container;
+}
+
+%flicker {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+%icon {
+    font-family:'fontello';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap{
+    width:100%;
+    padding:0 15px;
+
+    > *{
+        @include afterclear;
+        width:$width;
+        margin:0 auto;
+    }
+
+    > header{
+        width:$hwidth;
+    }
+}

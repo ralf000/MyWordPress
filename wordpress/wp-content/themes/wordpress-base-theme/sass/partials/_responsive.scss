@@ -1,0 +1,19 @@
+@include mqmin( $phone ) {
+    
+}
+
+@include mqmin( $ipad ) {
+    .header {
+        .m {
+            display: none;
+        }
+    }
+}
+
+@include mqmin( $desktop ) {
+    
+}
+
+@include mqmin( $large ) {
+    
+}

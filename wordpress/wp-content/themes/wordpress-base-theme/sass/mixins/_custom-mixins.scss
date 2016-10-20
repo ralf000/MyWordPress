@@ -1,0 +1,82 @@
+// Cross browser opacity
+@mixin opacity ( $value: 0.5 ) {
+	opacity: $value;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" $value * 100 ")";
+	filter: alpha(opacity= $value * 100 );
+	zoom: 1;
+}
+
+// Media Queries
+@mixin mq($query) {
+	@media #{$query} { @content; };
+}
+@mixin mqmax($size) {
+	@media only screen and (max-width: $size) { @content; }
+}
+@mixin mqmin($size) {
+	@media only screen and (min-width: $size) { @content; }
+}
+
+// Absolutely position elements
+@mixin abs ($top: false, $right: false, $bottom: false, $left: false) {
+	position: absolute;
+	@if $top { top: $top; }
+	@if $right { right: $right; }
+	@if $bottom { bottom: $bottom; }
+	@if $left { left: $left; }
+}
+
+/**
+ * Returns a list of all text-based input types (excluding textarea)
+ * @pseudo {String} 	An optional pseudo selector (eg: :hover, :focus)
+ * @additional {List} 	An optional list of additional input types posible types include: color, date, datetime, datetime-local, month, time, week
+ */
+$text-inputs: 	"text",
+				"email",
+				"url",
+				"tel",
+				"number",
+				"search",
+				"password";
+
+@mixin textfields($pseudo: '', $additional: ()) {
+	$types: ();
+	@each $type in $text-inputs {
+		$types: append($types, unquote('&[type="#{$type}"]#{$pseudo}'), comma);
+	}
+	@each $type in $additional {
+		$types: append($types, unquote('&[type="#{$type}"]#{$pseudo}'), comma);
+	}
+	input {
+		#{$types} {
+			@content
+		}
+	}
+}
+
+@mixin afterclear(){
+    &:after{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " " !important;
+        clear: both;
+        height: 0;
+    }
+}
+
+@mixin hiddencheck(){
+    position: absolute;
+    top:0;
+    left: -9999px;
+    z-index:-100;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    border:none;
+    outline:none;
+    margin:0;
+    padding:0;
+    background:transparent;
+    pointer-events:none;
+}

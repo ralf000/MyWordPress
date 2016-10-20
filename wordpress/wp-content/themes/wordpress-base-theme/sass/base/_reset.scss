@@ -1,0 +1,125 @@
+// 	==================================================================================
+//			4O1! CSS Reset - v2.0 | 11-08-11
+//			Based on:
+//				Eric Meyer's Reset: http://meyerweb.com/eric/tools/css/reset/
+//				Normalize.css: 			http://github.com/necolas/normalize.css
+//		==================================================================================
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+html {
+	overflow-y: scroll; 
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%; 
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,img { 
+	display:block;  
+}  
+
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-weight: inherit;
+	color: inherit;
+}
+:focus {
+	outline: none;
+}
+strong { 
+	font-weight: bold; 
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+ul, ol {
+  margin-left: 0;
+  padding: 0 0 0 30px;
+}
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+}
+button,input[type=button],input[type=reset],input[type=submit] { 
+	cursor:pointer; 
+	-webkit-appearance:button; 
+	overflow:visible;  
+}  
+input[type=checkbox],input[type=radio] { 
+	box-sizing:border-box;
+	padding:0;  
+}  
+input[type=search] { 
+	-webkit-appearance:textfield; 
+	-moz-box-sizing:content-box; 
+	-webkit-box-sizing:content-box; 
+	box-sizing:content-box;  
+}  
+input[type=search]::-webkit-search-decoration { 
+	-webkit-appearance:none;  
+}  
+button::-moz-focus-inner,input::-moz-focus-inner { 
+	border:0; 
+	padding:0;  
+}  
+textarea { 
+	overflow:auto; 
+	vertical-align:top;  
+} 
+
+/* Wordpress */
+.alignleft {
+	float: left;
+	margin: 0 25px 15px 0;
+}
+.alignright {
+	float: right;
+	margin: 0 0 15px 25px;
+} 
+
+.alignnone {
+	margin:10px 0 15px 0;
+}
+
+.aligncenter {
+	margin:15px auto;
+}
+
+
+// -------- CLEARFIX -------- 
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	*zoom:1;
+}
