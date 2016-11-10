@@ -1,3 +1,9 @@
+<?php
+/*
+  Template Name: Шаблон главной страницы
+ */
+?>
+
 <?php get_header(); ?>
 
 <body class="home">
@@ -12,7 +18,7 @@
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-            <a href="index.htm"><img src="img/piccolo-logo.png" alt=""/></a>
+            <a href="index.htm"><img src="<?php echo get_template_directory_uri(); ?>/img/piccolo-logo.png" alt=""/></a>
             <h5>Big Things... Small Packages</h5>
         </div>
 
@@ -113,11 +119,21 @@
         <div class="span8">
             <div class="flexslider">
                 <ul class="slides">
-                    <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider"/></a></li>
-                    <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider"/></a></li>
-                    <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider"/></a></li>
-                    <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider"/></a></li>
-                    <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider"/></a></li>
+                    <li><a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
+                                alt="slider"/></a></li>
+                    <li><a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
+                                alt="slider"/></a></li>
+                    <li><a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
+                                alt="slider"/></a></li>
+                    <li><a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
+                                alt="slider"/></a></li>
+                    <li><a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
+                                alt="slider"/></a></li>
                 </ul>
             </div>
         </div>
@@ -125,13 +141,14 @@
         <!-- Headline Text
         ================================================== -->
         <div class="span4">
-            <h3>Welcome to Piccolo. <br/>
-                A Big Theme in a Small Package.</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium vulputate magna sit
-                amet blandit.</p>
-            <p>Cras rutrum, massa non blandit convallis, est lacus gravida enim, eu fermentum ligula orci et tortor. In
-                sit amet nisl ac leo pulvinar molestie. Morbi blandit ultricies ultrices.</p>
-            <a href="#"><i class="icon-plus-sign"></i>Read More</a>
+            <? $about = get_post(5, OBJECT, 'display'); ?>
+            <?php if ($about): ?>
+                <h3><?= $about->post_title; ?></h3>
+                <p class="lead"><?= getIndexPageText($about->post_content) ?></p>
+                <a href="<?= $about->guid ?>"><i class="icon-plus-sign"></i>Read More</a>
+            <?php else: ?>
+                <h3>Здесь пусто</h3>
+            <?php endif; ?>
         </div>
     </div><!-- End Headline -->
 
@@ -158,7 +175,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international ad campaign.</span>
                     </li>
 
@@ -171,7 +190,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">3 Color Poster Design</a>For a regional festival event.</span>
                     </li>
 
@@ -184,7 +205,9 @@
                                 <a href="#" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Ink Pen Illustration</a>Created for a best selling children's book.</span>
                     </li>
 
@@ -197,7 +220,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
                     </li>
 
@@ -210,7 +235,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Icon Design</a>Classic retro style illustration.</span>
                     </li>
 
@@ -223,7 +250,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Animation Cell</a>Creative storyboard illustration</span>
                     </li>
 
@@ -236,7 +265,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Poster Ad Campaign</a>Regional ad for a local company.</span>
                     </li>
 
@@ -249,7 +280,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Magazine Ad</a>For an international add campaign.</span>
                     </li>
 
@@ -262,7 +295,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Character Designs</a>For a feature film.</span>
                     </li>
 
@@ -275,7 +310,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Poster and Ad Design</a>For an international add campaign.</span>
                     </li>
 
@@ -288,7 +325,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Website and Animation</a>For a local business.</span>
                     </li>
 
@@ -301,7 +340,9 @@
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
+                                alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Branding Design</a>For an international add campaign.</span>
                     </li>
                 </ul>
@@ -329,8 +370,9 @@
 
                     <!-- Blog Item 1 -->
                     <div class="active item">
-                        <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt=""
-                                                       class="align-left blog-thumb-preview"/></a>
+                        <a href="blog-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
+                                class="align-left blog-thumb-preview"/></a>
                         <div class="post-info clearfix">
                             <h4><a href="blog-single.htm">A subject that is beautiful in itself</a></h4>
                             <ul class="blog-details-preview">
@@ -354,8 +396,9 @@
 
                     <!-- Blog Item 2 -->
                     <div class="item">
-                        <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt=""
-                                                       class="align-left blog-thumb-preview"/></a>
+                        <a href="blog-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
+                                class="align-left blog-thumb-preview"/></a>
                         <div class="post-info clearfix">
                             <h4><a href="blog-single.htm">A great artist is always before his time</a></h4>
                             <ul class="blog-details-preview">
@@ -379,8 +422,9 @@
 
                     <!-- Blog Item 3 -->
                     <div class="item">
-                        <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt=""
-                                                       class="align-left blog-thumb-preview"/></a>
+                        <a href="blog-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
+                                class="align-left blog-thumb-preview"/></a>
                         <div class="post-info clearfix">
                             <h4><a href="blog-single.htm">Is art everything to anybody?</a></h4>
                             <ul class="blog-details-preview">
@@ -445,11 +489,21 @@
 
             <!-- Client Logo Thumbs-->
             <ul class="client-logos">
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-1.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-2.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-3.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-4.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-5.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img
+                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-1.png" alt="Client"></a>
+                </li>
+                <li><a href="#" class="client-link"><img
+                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-2.png" alt="Client"></a>
+                </li>
+                <li><a href="#" class="client-link"><img
+                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-3.png" alt="Client"></a>
+                </li>
+                <li><a href="#" class="client-link"><img
+                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-4.png" alt="Client"></a>
+                </li>
+                <li><a href="#" class="client-link"><img
+                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-5.png" alt="Client"></a>
+                </li>
             </ul>
 
         </div>
@@ -458,90 +512,4 @@
 
 </div> <!-- End Container -->
 
-<!-- Footer Area
-    ================================================== -->
-
-<div class="footer-container"><!-- Begin Footer -->
-    <div class="container">
-        <div class="row footer-row">
-            <div class="span3 footer-col">
-                <h5>About Us</h5>
-                <img src="img/piccolo-footer-logo.png" alt="Piccolo"/><br/><br/>
-                <address>
-                    <strong>Design Team</strong><br/>
-                    123 Main St, Suite 500<br/>
-                    New York, NY 12345<br/>
-                </address>
-                <ul class="social-icons">
-                    <li><a href="#" class="social-icon facebook"></a></li>
-                    <li><a href="#" class="social-icon twitter"></a></li>
-                    <li><a href="#" class="social-icon dribble"></a></li>
-                    <li><a href="#" class="social-icon rss"></a></li>
-                    <li><a href="#" class="social-icon forrst"></a></li>
-                </ul>
-            </div>
-            <div class="span3 footer-col">
-                <h5>Latest Tweets</h5>
-                <ul>
-                    <li><a href="#">@room122</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li><a href="#">@room122</a> In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum.
-                        Morbi blandit ultricies ultrices.
-                    </li>
-                    <li><a href="#">@room122</a> Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu
-                        orci rutrum aliquam.
-                    </li>
-                </ul>
-            </div>
-            <div class="span3 footer-col">
-                <h5>Latest Posts</h5>
-                <ul class="post-list">
-                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                    <li><a href="#">Consectetur adipiscing elit est lacus gravida</a></li>
-                    <li><a href="#">Lectus sed orci molestie molestie etiam</a></li>
-                    <li><a href="#">Mattis consectetur adipiscing elit est lacus</a></li>
-                    <li><a href="#">Cras rutrum, massa non blandit convallis est</a></li>
-                </ul>
-            </div>
-            <div class="span3 footer-col">
-                <h5>Flickr Photos</h5>
-                <ul class="img-feed">
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row"><!-- Begin Sub Footer -->
-            <div class="span12 footer-col footer-sub">
-                <div class="row no-margin">
-                    <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span>
-                    </div>
-                    <div class="span6">
-                            <span class="right">
-                            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
-                                    href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
-                                    href="#">Contact</a>
-                            </span>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End Sub Footer -->
-
-    </div>
-</div><!-- End Footer -->
-
-<!-- Scroll to Top -->
-<div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
-
-</body>
-</html>
+<? get_footer() ?>

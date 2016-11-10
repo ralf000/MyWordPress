@@ -17,10 +17,10 @@ function loadStyleScript()
     wp_enqueue_style('flexslider-css', get_template_directory_uri() . '/css/flexslider.css');
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 
-    wp_enqueue_script( 'html5-js', 'http://html5shim.googlecode.com/svn/trunk/html5.js' );
-    wp_script_add_data( 'html5-js', 'conditional', 'lt IE 9' );
-    wp_enqueue_style( 'style-ie-css', get_template_directory_uri() . '/css/style-ie.css' );
-    wp_style_add_data( 'style-ie-css', 'conditional', 'lt IE 9' );
+    wp_enqueue_script('html5-js', 'http://html5shim.googlecode.com/svn/trunk/html5.js');
+    wp_script_add_data('html5-js', 'conditional', 'lt IE 9');
+    wp_enqueue_style('style-ie-css', get_template_directory_uri() . '/css/style-ie.css');
+    wp_style_add_data('style-ie-css', 'conditional', 'lt IE 9');
 
     wp_enqueue_script('jq-js', 'http://code.jquery.com/jquery-1.8.3.min.js');
     wp_enqueue_script('jq-custom-js', get_template_directory_uri() . '/js/jquery.custom.js');
@@ -42,3 +42,11 @@ add_action('wp_enqueue_scripts', 'loadStyleScript');
  */
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(180, 180);
+
+function getIndexPageText($excerpt)
+{
+    $list = explode('.', $excerpt, 3);
+    return (count($list) < 3)
+        ? implode(' ', $list)
+        : '<p class="lead">' . implode('. ', array_slice($list, 0, 2)) . '</p><p>' .substr($list[2], 0, 100).'...</p>';
+}
