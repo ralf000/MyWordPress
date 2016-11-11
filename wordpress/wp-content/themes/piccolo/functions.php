@@ -48,13 +48,14 @@ function getIndexPageText($excerpt)
     $list = explode('.', $excerpt, 3);
     return (count($list) < 3)
         ? implode(' ', $list)
-        : '<p class="lead">' . implode('. ', array_slice($list, 0, 2)) . '</p><p>' .substr($list[2], 0, 100).'...</p>';
+        : '<p class="lead">' . implode('. ', array_slice($list, 0, 2)) . '</p><p>' . substr($list[2], 0, 100) . '...</p>';
 }
 
 /**
  * опции
  **/
-function add_phone_in_opts(){
+function add_phone_in_opts()
+{
     // создаем поле опции
     // $id, $title, $callback, $page, $section, $args
     add_settings_field(
@@ -75,7 +76,8 @@ function add_phone_in_opts(){
 
 }
 
-function add_logo_text_in_opts(){
+function add_logo_text_in_opts()
+{
     add_settings_field(
         'logo_text', // $id - Название опции (идентификатор)
         'Текст для логотипа', // $title - Заголовок поля
@@ -92,9 +94,52 @@ function add_logo_text_in_opts(){
 add_action('admin_init', 'add_phone_in_opts');
 add_action('admin_init', 'add_logo_text_in_opts');
 
-function display_phone_in_opts(){
+function display_phone_in_opts()
+{
     echo "<input type='text' class='regular-text' name='my_phone' value='" . esc_attr(get_option('my_phone')) . "'>";
 }
-function display_logo_text_in_opts(){
+
+function display_logo_text_in_opts()
+{
     echo "<input type='text' class='regular-text' name='logo_text' value='" . esc_attr(get_option('logo_text')) . "'>";
+}
+
+add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
+
+//добавляем класс active для активного пункта меню и другие css классы
+function special_nav_class($classes, $item)
+{
+    if (in_array('current-menu-item', $classes)) {
+        $classes[] = 'active';
+    }
+    if (in_array('menu-item-has-children', $classes)) {
+        $classes[] = 'dropdown';
+    }
+    return $classes;
+}
+
+
+function getMainMenu()
+{
+    $menu = wp_nav_menu([
+        'theme_location' => 'main_menu',
+        'menu' => 'Top menu',
+        'container' => '',
+        'menu_class' => 'nav',
+        'echo' => false,
+        'fallback_cb' => 'wp_page_menu',
+        'depth' => 0,
+//        'walker' => new My_Walker_Nav_Menu(),
+    ]);
+    
+    $search = [
+        '~sub-menu~',
+        '~(<li.*dropdown.*>)<a.* (href=".*")>(.*)</a>~Uuim'
+    ];
+    $replacements = [
+        'dropdown-menu',
+        '$1<a $2 class="dropdown-toggle" data-toggle="dropdown">$3 <b class="caret"></b></a>',
+    ];
+    $menu = preg_replace($search, $replacements, $menu);
+    return $menu;
 }
