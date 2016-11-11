@@ -143,3 +143,42 @@ function getMainMenu()
     $menu = preg_replace($search, $replacements, $menu);
     return $menu;
 }
+
+
+/*
+ * Добавляем новый тип записей слайдер
+ */
+function slider_post() {
+    $labels = array(
+        'name'               => 'Слайды', // Основное название типа записи
+        'singular_name'      => 'Слайд', // отдельное название записи типа Book
+        'add_new'            => 'Добавить новый',
+        'add_new_item'       => 'Добавить новый слайд',
+        'edit_item'          => 'Редактировать слайд',
+        'new_item'           => 'Новый слайд',
+        'view_item'          => 'Посмотреть слайд',
+        'search_items'       => 'Найти слайд',
+        'not_found'          => 'Слайдов не найдено',
+        'not_found_in_trash' => 'В корзине слайдов не найдено',
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Слайды'
+    );
+    $args   = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => true,
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array('title', 'thumbnail', 'custom-fields')
+    );
+    register_post_type('slide', $args);
+}
+
+//добавляем функцию в экшн init
+add_action('init', 'slider_post');

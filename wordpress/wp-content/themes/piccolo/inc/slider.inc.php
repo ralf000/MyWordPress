@@ -1,23 +1,19 @@
 <!-- Slider Carousel
   ================================================== -->
 <div class="span8">
-    <div class="flexslider">
-        <ul class="slides">
-            <li><a href="gallery-single.htm"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
-                        alt="slider"/></a></li>
-            <li><a href="gallery-single.htm"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
-                        alt="slider"/></a></li>
-            <li><a href="gallery-single.htm"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
-                        alt="slider"/></a></li>
-            <li><a href="gallery-single.htm"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
-                        alt="slider"/></a></li>
-            <li><a href="gallery-single.htm"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/slider-img-1.jpg"
-                        alt="slider"/></a></li>
-        </ul>
-    </div>
+    <?php $slider = new WP_Query([
+        'post_type' => 'slide',
+        'order' => 'asc'
+    ]); ?>
+    <?php if ($slider->have_posts()): ?>
+        <div class="flexslider">
+            <ul class="slides">
+                <?php while ($slider->have_posts()): $slider->the_post() ?>
+                    <li><a target="_blank" href="<?= post_custom('slide_link'); ?>"><?php the_post_thumbnail('full') ?></a></li>
+                <?php endwhile; ?>
+            </ul>
+        </div>
+    <?php else: ?>
+        <p>Слайдов нет</p>
+    <?php endif; ?>
 </div>
