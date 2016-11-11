@@ -50,3 +50,51 @@ function getIndexPageText($excerpt)
         ? implode(' ', $list)
         : '<p class="lead">' . implode('. ', array_slice($list, 0, 2)) . '</p><p>' .substr($list[2], 0, 100).'...</p>';
 }
+
+/**
+ * опции
+ **/
+function add_phone_in_opts(){
+    // создаем поле опции
+    // $id, $title, $callback, $page, $section, $args
+    add_settings_field(
+        'phone', // $id - Название опции (идентификатор)
+        'Телефон', // $title - Заголовок поля
+        'display_phone_in_opts', // $callback - callback function
+        'general' // $page - Страница меню в которую будет добавлено поле
+    );
+
+    // Регистрирует новую опцию и callback функцию (функцию обратного вызова)
+    // для обработки значения опции при её сохранении в БД.
+    // $option_group, $option_name, $sanitize_callback
+    register_setting(
+        'general', // $option_group - Название группы, к которой будет принадлежать опция.
+        // Это название должно совпадать с названием группы в функции settings_fields()
+        'my_phone' // $option_name - Название опции, которая будет сохраняться в БД
+    );
+
+}
+
+function add_logo_text_in_opts(){
+    add_settings_field(
+        'logo_text', // $id - Название опции (идентификатор)
+        'Текст для логотипа', // $title - Заголовок поля
+        'display_logo_text_in_opts', // $callback - callback function
+        'general' // $page - Страница меню в которую будет добавлено поле
+    );
+    register_setting(
+        'general', // $option_group - Название группы, к которой будет принадлежать опция.
+        // Это название должно совпадать с названием группы в функции settings_fields()
+        'logo_text' // $option_name - Название опции, которая будет сохраняться в БД
+    );
+}
+
+add_action('admin_init', 'add_phone_in_opts');
+add_action('admin_init', 'add_logo_text_in_opts');
+
+function display_phone_in_opts(){
+    echo "<input type='text' class='regular-text' name='my_phone' value='" . esc_attr(get_option('my_phone')) . "'>";
+}
+function display_logo_text_in_opts(){
+    echo "<input type='text' class='regular-text' name='logo_text' value='" . esc_attr(get_option('logo_text')) . "'>";
+}
