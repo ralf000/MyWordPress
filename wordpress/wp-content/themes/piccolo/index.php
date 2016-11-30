@@ -2,7 +2,7 @@
 
 <div class="row headline"><!-- Begin Headline -->
 
-   <?php require_once 'inc/slider.inc.php'?>
+    <?php require_once 'inc/slider.inc.php' ?>
 
     <!-- Headline Text
     ================================================== -->
@@ -18,204 +18,55 @@
     </div>
 </div><!-- End Headline -->
 
-<div class="row gallery-row"><!-- Begin Gallery Row -->
+<?php
+$gallery = new WP_Query([
+    'post_type' => 'post',
+    'cat' => 6,
+    'post_count' => 12
+]);
+?>
+<? if ($gallery->have_posts()): ?>
+    <div class="row gallery-row"><!-- Begin Gallery Row -->
 
-    <div class="span12">
-        <h5 class="title-bg">Recent Work
-            <small>That we are most proud of</small>
-            <button class="btn btn-mini btn-inverse hidden-phone" type="button">View Portfolio</button>
-        </h5>
+        <div class="span12">
+            <h5 class="title-bg">
+                <? if (category_description(6)) echo titleGenerator(category_description(6)) ?>
+                <button onclick="location.href='<?= get_category_link(6); ?>'"
+                        class="btn btn-mini btn-inverse hidden-phone"
+                        type="button"><?= get_the_category_by_ID(6) ?></button>
+            </h5>
 
-        <!-- Gallery Thumbnails
-        ================================================== -->
+            <!-- Gallery Thumbnails
+            ================================================== -->
+            <div class="row clearfix no-margin">
+                <ul class="gallery-post-grid holder">
 
-        <div class="row clearfix no-margin">
-            <ul class="gallery-post-grid holder">
-
-                <!-- Gallery Item 1 -->
-                <li class="span3 gallery-item" data-id="id-1" data-type="illustration">
+                    <!-- Gallery Item 1 -->
+                    <?php while ($gallery->have_posts()) : $gallery->the_post(); ?>
+                        <li class="span3 gallery-item" data-id="id-<? the_ID() ?>" data-type="illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
+                                <a href="<?php the_post_thumbnail_url('full') ?>" class="item-zoom-link lightbox"
+                                   title="<?php the_title() ?>" data-rel="prettyPhoto"></a>
+                                <a href="<?php the_permalink() ?>" class="item-details-link"></a>
                             </span>
                         </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international ad campaign.</span>
-                </li>
+                            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium') ?></a>
+                            <span class="project-details">
+                                <a href="<?php the_permalink() ?>">Custom Illustration</a>
+                                <?php the_excerpt(); ?>
+                            </span>
+                        </li>
+                    <?php endwhile; ?>
 
-                <!-- Gallery Item 2 -->
-                <li class="span3 gallery-item" data-id="id-2" data-type="illustration">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">3 Color Poster Design</a>For a regional festival event.</span>
-                </li>
-
-                <!-- Gallery Item 3 -->
-                <li class="span3 gallery-item" data-id="id-3" data-type="web">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="#" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Ink Pen Illustration</a>Created for a best selling children's book.</span>
-                </li>
-
-                <!-- Gallery Item 4 -->
-                <li class="span3 gallery-item" data-id="id-4" data-type="video">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
-                </li>
-
-                <!-- Gallery Item 5 -->
-                <li class="span3 gallery-item" data-id="id-5" data-type="web illustration">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Icon Design</a>Classic retro style illustration.</span>
-                </li>
-
-                <!-- Gallery Item 6 -->
-                <li class="span3 gallery-item" data-id="id-6" data-type="illustration design">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Animation Cell</a>Creative storyboard illustration</span>
-                </li>
-
-                <!-- Gallery Item 7 -->
-                <li class="span3 gallery-item" data-id="id-7" data-type="design">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Poster Ad Campaign</a>Regional ad for a local company.</span>
-                </li>
-
-                <!-- Gallery Item 8 -->
-                <li class="span3 gallery-item" data-id="id-8" data-type="web video">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Magazine Ad</a>For an international add campaign.</span>
-                </li>
-
-                <!-- Gallery Item 9 -->
-                <li class="span3 gallery-item" data-id="id-9" data-type="design">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Character Designs</a>For a feature film.</span>
-                </li>
-
-                <!-- Gallery Item 10 -->
-                <li class="span3 gallery-item" data-id="id-10" data-type="web design">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Poster and Ad Design</a>For an international add campaign.</span>
-                </li>
-
-                <!-- Gallery Item 11 -->
-                <li class="span3 gallery-item" data-id="id-11" data-type="illustration">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Website and Animation</a>For a local business.</span>
-                </li>
-
-                <!-- Gallery Item 12 -->
-                <li class="span3 gallery-item" data-id="id-12" data-type="illustration video">
-                        <span class="gallery-hover-4col hidden-phone hidden-tablet">
-                            <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox"
-                                   title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
-                            </span>
-                        </span>
-                    <a href="gallery-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/gallery-img-1-4col.jpg"
-                            alt="Gallery"></a>
-                    <span class="project-details"><a href="gallery-single.htm">Branding Design</a>For an international add campaign.</span>
-                </li>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
 
-</div><!-- End Gallery Row -->
+    </div><!-- End Gallery Row -->
+<?php endif; ?>
+<!-- Возвращаем оригинальные данные поста. Сбрасываем $post. -->
+<?php wp_reset_postdata(); ?>
 
 <div class="row"><!-- Begin Bottom Section -->
 
@@ -223,97 +74,111 @@
     ================================================== -->
     <div class="span6">
 
-        <h5 class="title-bg">From the Blog
-            <small>All the latest news</small>
-            <button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
-            <button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
-        </h5>
+        <?php
+        $blog = new WP_Query([
+            'post_type' => 'post',
+            'cat' => 2,
+            'post_count' => 6
+        ]);
+        ?>
+        <? if ($blog->have_posts()): ?>
+            <h5 class="title-bg">
+                <? if (category_description(2)) echo titleGenerator(category_description(2)) ?>
+                <button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
+                <button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
+            </h5>
 
-        <div id="blogCarousel" class="carousel slide ">
+            <div id="blogCarousel" class="carousel slide ">
 
-            <!-- Carousel items -->
-            <div class="carousel-inner">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
 
-                <!-- Blog Item 1 -->
-                <div class="active item">
-                    <a href="blog-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
-                            class="align-left blog-thumb-preview"/></a>
-                    <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">A subject that is beautiful in itself</a></h4>
-                        <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015
-                            <li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#"
-                                                                                        title="Link">Admin</a>
-                            <li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#"
-                                                                                          title="Link">12</a>
-                            <li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a
-                                    href="#">illustration</a>
-                        </ul>
+                    <!-- Blog Item -->
+                    <?php $i = 0 ?>
+                    <?php while ($blog->have_posts()) : $blog->the_post(); ?>
+                        <div class="<?= !$i ? 'active' : '' ?> item">
+                            <a href="<?php the_permalink() ?>">
+                                <img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_title() ?>"
+                                     class="align-left blog-thumb-preview"/></a>
+                            <div class="post-info clearfix">
+                                <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
+                                <ul class="blog-details-preview">
+                                    <li><i class="icon-calendar"></i><strong>Posted
+                                            on:</strong> <?php the_date('M j, Y') ?>
+                                    <li>
+                                    <li><i class="icon-user"></i><strong>Posted by:</strong>
+                                        <a href="<?php the_author_link() ?>" title="Link"><?php the_author() ?></a>
+                                    <li>
+                                    <li><i class="icon-comment"></i><strong>Comments:</strong>
+                                        <a href="<?php comment_link() ?>" title="Link"><?php comments_number() ?></a>
+                                    <li>
+                                    <li><i class="icon-tags"></i>
+                                    <?= trim(str_replace('</a>', '</a> ', get_the_tag_list())) ?>
+                                </ul>
+                            </div>
+                            <p class="blog-summary"><?= strip_tags(get_the_excerpt()) ?> <a href="<?php the_permalink() ?>">Read more</a>
+                            <p>
+                        </div>
+                        <?php $i++; ?>
+                    <?php endwhile; ?>
+
+                    <!-- Blog Item 2 -->
+                    <div class="item">
+                        <a href="blog-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
+                                class="align-left blog-thumb-preview"/></a>
+                        <div class="post-info clearfix">
+                            <h4><a href="blog-single.htm">A great artist is always before his time</a></h4>
+                            <ul class="blog-details-preview">
+                                <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015
+                                <li>
+                                <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#"
+                                                                                            title="Link">Admin</a>
+                                <li>
+                                <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#"
+                                                                                              title="Link">12</a>
+                                <li>
+                                <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a
+                                        href="#">illustration</a>
+                            </ul>
+                        </div>
+                        <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum
+                            felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus,
+                            aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a>
+                        <p>
                     </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum
-                        felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus,
-                        aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a>
-                    <p>
-                </div>
 
-                <!-- Blog Item 2 -->
-                <div class="item">
-                    <a href="blog-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
-                            class="align-left blog-thumb-preview"/></a>
-                    <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">A great artist is always before his time</a></h4>
-                        <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015
-                            <li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#"
-                                                                                        title="Link">Admin</a>
-                            <li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#"
-                                                                                          title="Link">12</a>
-                            <li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a
-                                    href="#">illustration</a>
-                        </ul>
+                    <!-- Blog Item 3 -->
+                    <div class="item">
+                        <a href="blog-single.htm"><img
+                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
+                                class="align-left blog-thumb-preview"/></a>
+                        <div class="post-info clearfix">
+                            <h4><a href="blog-single.htm">Is art everything to anybody?</a></h4>
+                            <ul class="blog-details-preview">
+                                <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015
+                                <li>
+                                <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#"
+                                                                                            title="Link">Admin</a>
+                                <li>
+                                <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#"
+                                                                                              title="Link">12</a>
+                                <li>
+                                <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a
+                                        href="#">illustration</a>
+                            </ul>
+                        </div>
+                        <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum
+                            felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus,
+                            aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a>
+                        <p>
                     </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum
-                        felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus,
-                        aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a>
-                    <p>
-                </div>
 
-                <!-- Blog Item 3 -->
-                <div class="item">
-                    <a href="blog-single.htm"><img
-                            src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
-                            class="align-left blog-thumb-preview"/></a>
-                    <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">Is art everything to anybody?</a></h4>
-                        <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015
-                            <li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#"
-                                                                                        title="Link">Admin</a>
-                            <li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#"
-                                                                                          title="Link">12</a>
-                            <li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a
-                                    href="#">illustration</a>
-                        </ul>
-                    </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum
-                        felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus,
-                        aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a>
-                    <p>
                 </div>
-
             </div>
-        </div>
+        <? endif; ?>
+        <!-- Возвращаем оригинальные данные поста. Сбрасываем $post. -->
+        <?php wp_reset_postdata(); ?>
     </div>
 
     <!-- Client Area
