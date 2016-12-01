@@ -64,6 +64,8 @@ $gallery = new WP_Query([
         </div>
 
     </div><!-- End Gallery Row -->
+<?php else: ?>
+    <p>Записей пока нет</p>
 <?php endif; ?>
 <!-- Возвращаем оригинальные данные поста. Сбрасываем $post. -->
 <?php wp_reset_postdata(); ?>
@@ -94,9 +96,10 @@ $gallery = new WP_Query([
                 <div class="carousel-inner">
 
                     <!-- Blog Item -->
-                    <?php $i = 0 ?>
                     <?php while ($blog->have_posts()) : $blog->the_post(); ?>
-                        <div class="<?= !$i ? 'active' : '' ?> item">
+                        <!--первая запись блока помечается классом active-->
+                        <div class="<?php if (!isset($flag)) echo 'active';
+                        $flag = true; ?> item">
                             <a href="<?php the_permalink() ?>">
                                 <img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_title() ?>"
                                      class="align-left blog-thumb-preview"/></a>
@@ -113,69 +116,20 @@ $gallery = new WP_Query([
                                         <a href="<?php comment_link() ?>" title="Link"><?php comments_number() ?></a>
                                     <li>
                                     <li><i class="icon-tags"></i>
-                                    <?= trim(str_replace('</a>', '</a> ', get_the_tag_list())) ?>
+                                        <?= trim(str_replace('</a>', '</a> ', get_the_tag_list())) ?>
                                 </ul>
                             </div>
-                            <p class="blog-summary"><?= strip_tags(get_the_excerpt()) ?> <a href="<?php the_permalink() ?>">Read more</a>
+                            <p class="blog-summary"><?= strip_tags(get_the_excerpt()) ?> <a
+                                    href="<?php the_permalink() ?>">Read more</a>
                             <p>
                         </div>
-                        <?php $i++; ?>
                     <?php endwhile; ?>
-
-                    <!-- Blog Item 2 -->
-                    <div class="item">
-                        <a href="blog-single.htm"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
-                                class="align-left blog-thumb-preview"/></a>
-                        <div class="post-info clearfix">
-                            <h4><a href="blog-single.htm">A great artist is always before his time</a></h4>
-                            <ul class="blog-details-preview">
-                                <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015
-                                <li>
-                                <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#"
-                                                                                            title="Link">Admin</a>
-                                <li>
-                                <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#"
-                                                                                              title="Link">12</a>
-                                <li>
-                                <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a
-                                        href="#">illustration</a>
-                            </ul>
-                        </div>
-                        <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum
-                            felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus,
-                            aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a>
-                        <p>
-                    </div>
-
-                    <!-- Blog Item 3 -->
-                    <div class="item">
-                        <a href="blog-single.htm"><img
-                                src="<?php echo get_template_directory_uri(); ?>/img/gallery/blog-med-img-1.jpg" alt=""
-                                class="align-left blog-thumb-preview"/></a>
-                        <div class="post-info clearfix">
-                            <h4><a href="blog-single.htm">Is art everything to anybody?</a></h4>
-                            <ul class="blog-details-preview">
-                                <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015
-                                <li>
-                                <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#"
-                                                                                            title="Link">Admin</a>
-                                <li>
-                                <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#"
-                                                                                              title="Link">12</a>
-                                <li>
-                                <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a
-                                        href="#">illustration</a>
-                            </ul>
-                        </div>
-                        <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum
-                            felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus,
-                            aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a>
-                        <p>
-                    </div>
+                    <!-- /Blog Item -->
 
                 </div>
             </div>
+        <?php else: ?>
+            <p>Записей пока нет</p>
         <? endif; ?>
         <!-- Возвращаем оригинальные данные поста. Сбрасываем $post. -->
         <?php wp_reset_postdata(); ?>
@@ -185,57 +139,68 @@ $gallery = new WP_Query([
     ================================================== -->
     <div class="span6">
 
-        <h5 class="title-bg">Recent Clients
-            <small>That love us</small>
+        <h5 class="title-bg">
+            <?= titleGenerator(get_option('quotes_title')); ?>
             <button id="btn-client-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
             <button id="btn-client-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
         </h5>
 
         <!-- Client Testimonial Slider-->
-        <div id="clientCarousel" class="carousel slide no-margin">
-            <!-- Carousel items -->
-            <div class="carousel-inner">
+        <?php
+        $quotes = new WP_Query([
+            'post_type' => 'quote',
+            'post_count' => 6
+        ]);
+        ?>
+        <?php if ($quotes->have_posts()): ?>
 
-                <div class="active item">
-                    <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum
-                        felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies
-                        ultrices. Vivamus nec lectus sed orci molestie molestie."<cite>- Client Name, Big
-                            Company</cite></p>
+            <div id="clientCarousel" class="carousel slide no-margin">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+
+                    <?php while ($quotes->have_posts()): $quotes->the_post() ?>
+
+
+                        <div class="<?php if (!isset($flag2)) echo 'active';
+                        $flag2 = true; ?> item">
+                            <p class="quote-text"><?= get_the_content() ?><cite><?= get_the_excerpt() ?></cite></p>
+                        </div>
+
+                        <div class="item">
+                            <p class="quote-text">"Adipiscing elit. In interdum felis fermentum ipsum molestie sed
+                                porttitor
+                                ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie
+                                molestie."<cite>- Another Client Name, Company Name</cite></p>
+                        </div>
+
+                        <div class="item">
+                            <p class="quote-text">"Mauris eget tellus sem. Cras sollicitudin sem eu elit aliquam quis
+                                condimentum nulla suscipit. Nam sed magna ante. Ut eget suscipit mauris."<cite>- On More
+                                    Client, The Company</cite></p>
+                        </div>
+
+
+                    <?php endwhile; ?>
+
                 </div>
-
-                <div class="item">
-                    <p class="quote-text">"Adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor
-                        ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie
-                        molestie."<cite>- Another Client Name, Company Name</cite></p>
-                </div>
-
-                <div class="item">
-                    <p class="quote-text">"Mauris eget tellus sem. Cras sollicitudin sem eu elit aliquam quis
-                        condimentum nulla suscipit. Nam sed magna ante. Ut eget suscipit mauris."<cite>- On More
-                            Client, The Company</cite></p>
-                </div>
-
             </div>
-        </div>
+
+        <?php else: ?>
+            <p>Цитат пока нет</p>
+        <?php endif; ?>
+        <!-- Возвращаем оригинальные данные поста. Сбрасываем $post. -->
+        <?php wp_reset_postdata(); ?>
+
 
         <!-- Client Logo Thumbs-->
-        <ul class="client-logos">
-            <li><a href="#" class="client-link"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-1.png" alt="Client"></a>
-            </li>
-            <li><a href="#" class="client-link"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-2.png" alt="Client"></a>
-            </li>
-            <li><a href="#" class="client-link"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-3.png" alt="Client"></a>
-            </li>
-            <li><a href="#" class="client-link"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-4.png" alt="Client"></a>
-            </li>
-            <li><a href="#" class="client-link"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/gallery/client-img-5.png" alt="Client"></a>
-            </li>
-        </ul>
+        <?php
+        if (!dynamic_sidebar('clients')){
+            echo '<ul class="client-logos">';
+            echo '<li>Клиенты компании</li>';
+            echo '</ul>';
+        }
+        ?>
+        
 
     </div>
 

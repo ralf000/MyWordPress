@@ -91,8 +91,24 @@ function add_logo_text_in_opts()
     );
 }
 
+function add_quotes_title_in_opts()
+{
+    add_settings_field(
+        'quotes_title', // $id - Название опции (идентификатор)
+        'Заголовок для цитат на главной', // $title - Заголовок поля
+        'display_quotes_title_in_opts', // $callback - callback function
+        'general' // $page - Страница меню в которую будет добавлено поле
+    );
+    register_setting(
+        'general', // $option_group - Название группы, к которой будет принадлежать опция.
+        // Это название должно совпадать с названием группы в функции settings_fields()
+        'quotes_title' // $option_name - Название опции, которая будет сохраняться в БД
+    );
+}
+
 add_action('admin_init', 'add_phone_in_opts');
 add_action('admin_init', 'add_logo_text_in_opts');
+add_action('admin_init', 'add_quotes_title_in_opts');
 
 function display_phone_in_opts()
 {
@@ -102,6 +118,11 @@ function display_phone_in_opts()
 function display_logo_text_in_opts()
 {
     echo "<input type='text' class='regular-text' name='logo_text' value='" . esc_attr(get_option('logo_text')) . "'>";
+}
+
+function display_quotes_title_in_opts()
+{
+    echo "<input type='text' class='regular-text' name='quotes_title' value='" . esc_attr(get_option('quotes_title')) . "'>";
 }
 
 add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
@@ -184,8 +205,59 @@ function slider_post()
 //добавляем функцию в экшн init
 add_action('init', 'slider_post');
 
+
+/*
+ * Добавляем новый тип записей цитаты
+ */
+function quote_post()
+{
+    $labels = array(
+        'name' => 'Цитаты', // Основное название типа записи
+        'singular_name' => 'Цитата', // отдельное название записи типа Book
+        'add_new' => 'Добавить новую',
+        'add_new_item' => 'Добавить новую Цитату',
+        'edit_item' => 'Редактировать Цитату',
+        'new_item' => 'Новая Цитата',
+        'view_item' => 'Посмотреть Цитату',
+        'search_items' => 'Найти Цитату',
+        'not_found' => 'Цитат не найдено',
+        'not_found_in_trash' => 'В корзине Цитат не найдено',
+        'parent_item_colon' => '',
+        'menu_name' => 'Цитаты'
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => ['title', 'excerpt', 'editor']
+    );
+    register_post_type('quote', $args);
+}
+
+//добавляем функцию в экшн init
+add_action('init', 'quote_post');
+
 function titleGenerator(string $string) :string
 {
     list($l, $r) = explode('~', strip_tags($string));
     return ($l && $r) ? $l . " <small>$r</small>" : null;
 }
+
+//область для виджетов
+$opts = [
+    'name'          => 'Клиенты компании',//название области для админки
+    'id'            => 'clients',
+    'before_widget' => '<div class="clients-widget" id="%1$s">',
+    'after_widget'  => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
+];
+register_sidebar($opts);
