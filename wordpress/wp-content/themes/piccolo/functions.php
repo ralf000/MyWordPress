@@ -3,7 +3,10 @@
 /*
  * меню (вывод меню первый вариант)
  */
-register_nav_menu('menu', 'main menu');
+register_nav_menus([
+    'menu' => 'main menu',
+    'footer-menu' => 'footer-menu'
+]);
 
 /*
  * функция подключения стилей и скриптов
@@ -259,5 +262,16 @@ $opts = [
     'after_widget'  => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>'
+];
+register_sidebar($opts);
+
+//область для виджетов
+$opts = [
+    'name'          => 'Подвал сайта',//название области для админки
+    'id'            => 'footer',
+    'before_widget' => '<div class="span3 footer-col" id="%1$s">',
+    'after_widget'  => '</div>',
+    'before_title' => '<h5>',
+    'after_title' => '</h5>'
 ];
 register_sidebar($opts);

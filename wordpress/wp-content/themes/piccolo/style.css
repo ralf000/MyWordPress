@@ -1032,7 +1032,7 @@ p.side {
     padding-bottom: 20px;
 }
 
-.footer-col ul.post-list li {
+.footer-col ul li.cat-post-item {
     border-bottom: 1px dashed #504f4f;
     padding: 10px 0px;
 }
@@ -1348,6 +1348,26 @@ a.accordion-toggle {
     width: 25%;
     line-height: 25px;
 }
+
+/*==========MY======================*/
+#fa_gallery-2 {
+    height: 250px;
+    overflow: hidden;
+}
+
+ul.footer_menu li {
+    display: inline-block;
+    padding-right: 5px;
+}
+ul.footer_menu li a{
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+ul.footer_menu li:last-child a{
+    border: none;
+}
+
 
 /* Mobile Portrait Size to Tablet Portrait Size */
 @media only screen and  (max-width: 767px) {
