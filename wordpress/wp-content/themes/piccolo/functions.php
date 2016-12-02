@@ -256,10 +256,10 @@ function titleGenerator(string $string) :string
 
 //область для виджетов
 $opts = [
-    'name'          => 'Клиенты компании',//название области для админки
-    'id'            => 'clients',
+    'name' => 'Клиенты компании',//название области для админки
+    'id' => 'clients',
     'before_widget' => '<div class="clients-widget" id="%1$s">',
-    'after_widget'  => '</div>',
+    'after_widget' => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>'
 ];
@@ -267,11 +267,76 @@ register_sidebar($opts);
 
 //область для виджетов
 $opts = [
-    'name'          => 'Подвал сайта',//название области для админки
-    'id'            => 'footer',
+    'name' => 'Подвал сайта',//название области для админки
+    'id' => 'footer',
     'before_widget' => '<div class="span3 footer-col" id="%1$s">',
-    'after_widget'  => '</div>',
+    'after_widget' => '</div>',
     'before_title' => '<h5>',
     'after_title' => '</h5>'
 ];
 register_sidebar($opts);
+
+//область для виджетов
+$opts = [
+    'name' => 'Правая колонка категории записей',//название области для админки
+    'id' => 'category_sidebar',
+    'before_widget' => '<div id="%1$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h5 class="title-bg">',
+    'after_title' => '</h5>'
+];
+register_sidebar($opts);
+
+//область для виджетов
+$opts = [
+    'name' => 'Правая колонка категории записей (переключающаяся панель)',//название области для админки
+    'id' => 'category_sidebar_bottom',
+    'before_widget' => '<div class="tab-pane" id="%1$s">',
+    'after_widget' => '</div>',
+];
+register_sidebar($opts);
+
+/**
+ * Выводит отформатированный список тегов
+ * @param string $tags результат работы функции get_the_tag_list()
+ * @return string отформатированный список тегов
+ */
+function getTags(string $tags) : string
+{
+    return trim(str_replace('</a>', '</a> ', $tags));
+}
+
+
+/**
+ * пагинация
+ */
+function sitePagination() {
+    global $wp_query, $wp_rewrite;
+    $output       = $pages        = '';
+    $max          = $wp_query->max_num_pages;
+    if (!$current      = get_query_var('paged'))//если текущая страница = 0 (если мы на первой странице)
+        $current      = 1;
+    $total          = 0; //1 - выводить текст "Страница N из N", 0 - не выводить
+    $opts = array(
+        'base' => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
+        'total' => $max,
+        'type' => 'list',
+        'current' => $current,
+        'prev_text' => __('Previous'),
+        'next_text' => __('Next'),
+        'end_size' => 1,
+        'mid_size' => 2,
+        'add_args' => array(), // array of query args to add
+        'add_fragment' => '',
+        'before_page_number' => '',
+        'after_page_number' => ''
+    );
+    if ($max > 1) {
+        echo '<div class="pagination">';
+        if ($total == 1)
+            $pages = '<span class="pages">Страница ' . $current . ' из ' . $max . '</span>' . "\r\n";
+        echo $pages . paginate_links($opts);
+        echo '</div>';
+    }
+}
+

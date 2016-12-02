@@ -936,7 +936,7 @@ ul.post-data li:last-child {
     margin: 0px;
 }
 
-.popular-posts li {
+.popular-posts li, #category-posts-4 li {
     list-style: none;
     margin-bottom: 20px;
     clear: both;
@@ -945,17 +945,23 @@ ul.post-data li:last-child {
 }
 
 .popular-posts li a,
-.popular-posts li a:hover {
+.popular-posts li a:hover,
+#category-posts-4 li a,
+#category-posts-4 li a:hover{
     color: #333333;
     text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
-.popular-posts li img {
+.popular-posts li img,
+#category-posts-4 li img{
     float: left;
     margin-right: 20px;
 }
-
-.popular-posts li em {
+#category-posts-4 p.post-date{font-style: italic}
+.popular-posts li em, #category-posts-4 p.post-date  {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -1032,7 +1038,7 @@ p.side {
     padding-bottom: 20px;
 }
 
-.footer-col ul li.cat-post-item {
+.footer-col ul li#category-posts-4 {
     border-bottom: 1px dashed #504f4f;
     padding: 10px 0px;
 }
@@ -1358,6 +1364,7 @@ a.accordion-toggle {
 ul.footer_menu li {
     display: inline-block;
     padding-right: 5px;
+    padding-bottom: 0;
 }
 ul.footer_menu li a{
     border-right: 1px solid white;
@@ -1366,6 +1373,22 @@ ul.footer_menu li a{
 
 ul.footer_menu li:last-child a{
     border: none;
+}
+
+#category-posts-4{
+    list-style: none;
+}
+
+#category-posts-4 .post-date:before{
+    content: 'Posted on '
+}
+
+#category-posts-4 ul{
+    margin: 0;
+}
+
+.tab-pane .widgettitle{
+    display: none;
 }
 
 

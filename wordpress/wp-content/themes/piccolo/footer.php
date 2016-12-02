@@ -43,14 +43,7 @@
                     ));
                     ?>
                     </div>
-
-<!--                                        <div class="span6">-->
-<!--                                                <span class="right">-->
-<!--                                                <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a-->
-<!--                                                        href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a-->
-<!--                                                        href="#">Contact</a>-->
-<!--                                                </span>-->
-<!--                                        </div>-->
+                    
                 </div>
             </div>
         </div><!-- End Sub Footer -->

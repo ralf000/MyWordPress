@@ -107,7 +107,7 @@ $gallery = new WP_Query([
                                 <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
                                 <ul class="blog-details-preview">
                                     <li><i class="icon-calendar"></i><strong>Posted
-                                            on:</strong> <?php the_date('M j, Y') ?>
+                                            on:</strong> <?php the_time('M j, Y') ?>
                                     <li>
                                     <li><i class="icon-user"></i><strong>Posted by:</strong>
                                         <a href="<?php the_author_link() ?>" title="Link"><?php the_author() ?></a>
@@ -116,7 +116,7 @@ $gallery = new WP_Query([
                                         <a href="<?php comment_link() ?>" title="Link"><?php comments_number() ?></a>
                                     <li>
                                     <li><i class="icon-tags"></i>
-                                        <?= trim(str_replace('</a>', '</a> ', get_the_tag_list())) ?>
+                                        <?= getTags(get_the_tag_list()) ?>
                                 </ul>
                             </div>
                             <p class="blog-summary"><?= strip_tags(get_the_excerpt()) ?> <a
@@ -194,13 +194,13 @@ $gallery = new WP_Query([
 
         <!-- Client Logo Thumbs-->
         <?php
-        if (!dynamic_sidebar('clients')){
+        if (!dynamic_sidebar('clients')) {
             echo '<ul class="client-logos">';
             echo '<li>Клиенты компании</li>';
             echo '</ul>';
         }
         ?>
-        
+
 
     </div>
 
