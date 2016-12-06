@@ -340,3 +340,22 @@ function sitePagination() {
     }
 }
 
+/**
+ * редактируем форму комментариев (порядок полей)
+ */
+add_filter('comment_form_fields', 'reorder_comment_fields');
+function reorder_comment_fields($fields)
+{
+    $new_fields = array(); // сюда соберем поля в новом порядке
+    $order = array('author', 'email', 'url', 'comment'); // нужный порядок
+    foreach ($order as $key) {
+        $new_fields[$key] = $fields[$key];
+        unset($fields[$key]);
+    }
+    // если остались еще какие-то поля добавим их в конец
+    if ($fields)
+        foreach ($fields as $key => $val)
+            $new_fields[$key] = $val;
+    return $new_fields;
+}
+

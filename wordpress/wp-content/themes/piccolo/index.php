@@ -22,7 +22,7 @@
 $gallery = new WP_Query([
     'post_type' => 'post',
     'cat' => 6,
-    'post_count' => 12
+    'posts_per_page' => 12
 ]);
 ?>
 <? if ($gallery->have_posts()): ?>
