@@ -359,3 +359,54 @@ function reorder_comment_fields($fields)
     return $new_fields;
 }
 
+
+/**
+ * Вовзращает массив меток
+ * @return array массив меток
+ */
+function getTagsInArray($id = NULL) {
+    $arr    = ($id !== NULL) ? wp_get_post_tags($id) : get_the_tags();
+    $output = [];
+    if (empty($arr))
+        return NULL;
+    foreach ($arr as $tag) {
+        $id                 = $tag->term_id;
+        $output[$tag->name] = get_tag_link($id);
+    }
+    return $output;
+}
+
+/*
+  * возвращает список меток всех постов в категории
+  */
+function getAllTagsFromCategory($catID) {
+    $posts = get_posts([
+        'category'    => $catID,
+        'numberposts' => -1
+    ]);
+    $tags = [];
+    foreach ($posts as $post) {
+        if (!empty($postTags = getTagsInArray($post->ID))) {
+            foreach ($postTags as $tag => $link) {
+                $tags[$tag] = $link;
+            }
+        }
+    }
+    return $tags;
+}
+
+/**
+ * Получает список имен тегов
+ * Использовать в цикле
+ * @return null|string
+ */
+function getTagsAsString(){
+    $tags = get_the_tags();
+    $output = '';
+    if (!$tags) return null;
+    foreach ($tags as $tag){
+        $output .= ($tag->name) . ' ';
+    }
+    return trim($output);
+}
+
