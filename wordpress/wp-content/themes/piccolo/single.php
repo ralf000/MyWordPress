@@ -62,7 +62,7 @@
 
     <!-- Blog Sidebar
     ================================================== -->
-    <?php require_once "inc/sidebar.inc.php" ?>
+    <?php require_once "inc/post-sidebar.inc.php" ?>
 
 </div>
 

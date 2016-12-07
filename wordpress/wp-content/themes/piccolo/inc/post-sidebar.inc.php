@@ -40,7 +40,7 @@
 
     <div class="tab-content">
         <?php
-        if (!dynamic_sidebar('category_sidebar_bottom')) {
+        if (!dynamic_sidebar('category_sidebar_tabs')) {
             echo '<p>Виджеты правой колонки категории записей для переключающейся панели</p>';
         }
         ?>

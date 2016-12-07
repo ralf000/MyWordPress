@@ -936,7 +936,7 @@ ul.post-data li:last-child {
     margin: 0px;
 }
 
-.popular-posts li, #category-posts-4 li {
+.popular-posts li, .sidebar div[id|="category-posts"] li {
     list-style: none;
     margin-bottom: 20px;
     clear: both;
@@ -946,8 +946,8 @@ ul.post-data li:last-child {
 
 .popular-posts li a,
 .popular-posts li a:hover,
-#category-posts-4 li a,
-#category-posts-4 li a:hover{
+.sidebar div[id|="category-posts"] li a,
+.sidebar div[id|="category-posts"] li a:hover{
     color: #333333;
     text-decoration: none;
     font-family: "Oswald", sans-serif;
@@ -956,12 +956,12 @@ ul.post-data li:last-child {
 }
 
 .popular-posts li img,
-#category-posts-4 li img{
+.sidebar div[id|="category-posts"] li img{
     float: left;
     margin-right: 20px;
 }
-#category-posts-4 p.post-date{font-style: italic}
-.popular-posts li em, #category-posts-4 p.post-date  {
+.sidebar div[id|="category-posts"] p.post-date{font-style: italic}
+.popular-posts li em, .sidebar div[id|="category-posts"] p.post-date  {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -1038,7 +1038,7 @@ p.side {
     padding-bottom: 20px;
 }
 
-.footer-col ul li#category-posts-4 {
+.footer-col ul li.sidebar div[id|="category-posts"] {
     border-bottom: 1px dashed #504f4f;
     padding: 10px 0px;
 }
@@ -1375,15 +1375,15 @@ ul.footer_menu li:last-child a{
     border: none;
 }
 
-#category-posts-4{
+.sidebar div[id|="category-posts"]{
     list-style: none;
 }
 
-#category-posts-4 .post-date:before{
+.sidebar div[id|="category-posts"] .post-date:before{
     content: 'Posted on '
 }
 
-#category-posts-4 ul{
+.sidebar div[id|="category-posts"] ul{
     margin: 0;
 }
 

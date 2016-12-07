@@ -289,8 +289,28 @@ register_sidebar($opts);
 
 //область для виджетов
 $opts = [
-    'name' => 'Правая колонка категории записей (переключающаяся панель)',//название области для админки
-    'id' => 'category_sidebar_bottom',
+    'name' => 'Правая колонка страниц',//название области для админки
+    'id' => 'page_sidebar',
+    'before_widget' => '<div id="%1$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h5 class="title-bg">',
+    'after_title' => '</h5>'
+];
+register_sidebar($opts);
+
+//область для виджетов
+$opts = [
+    'name' => 'Переключающаяся панель колонки записей',//название области для админки
+    'id' => 'category_sidebar_tabs',
+    'before_widget' => '<div class="tab-pane" id="%1$s">',
+    'after_widget' => '</div>',
+];
+register_sidebar($opts);
+
+//область для виджетов
+$opts = [
+    'name' => 'Переключающаяся панель колонки страниц',//название области для админки
+    'id' => 'page_sidebar_tabs',
     'before_widget' => '<div class="tab-pane" id="%1$s">',
     'after_widget' => '</div>',
 ];
@@ -408,5 +428,39 @@ function getTagsAsString(){
         $output .= ($tag->name) . ' ';
     }
     return trim($output);
+}
+
+/**
+ * проверяет существует и заполнено ли произвольное поле
+ * @param string $name имя поля
+ * @return bool
+ */
+function checkCustomField(string $name) : bool
+{
+    return isset(get_post_custom()[$name]) && get_post_custom()[$name][0];
+}
+
+function segment_length ($length) {
+    return 100;
+}
+function segment_more($more) {
+    return '...';
+}
+
+/**
+ * Позволяет вывести цитату статьи до тега <!--more-->
+ * @param string $length_callback
+ * @param string $more_callback
+ * @return mixed|string|void
+ */
+function getExcerptByMore($length_callback='segment_length', $more_callback='segment_more') {
+    global $post;
+    add_filter('excerpt_length', $length_callback);
+    add_filter('excerpt_more', $more_callback);
+    $output = get_the_excerpt();
+    $output = apply_filters('wptexturize', $output);
+    $output = apply_filters('convert_chars', $output);
+    $output = ''.$output.'';
+    return $output;
 }
 
