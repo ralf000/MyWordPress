@@ -300,6 +300,17 @@ register_sidebar($opts);
 
 //область для виджетов
 $opts = [
+    'name' => 'Правая колонка страницы контакты',//название области для админки
+    'id' => 'contacts_sidebar',
+    'before_widget' => '<div id="%1$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h5 class="title-bg">',
+    'after_title' => '</h5>'
+];
+register_sidebar($opts);
+
+//область для виджетов
+$opts = [
     'name' => 'Переключающаяся панель колонки записей',//название области для админки
     'id' => 'category_sidebar_tabs',
     'before_widget' => '<div class="tab-pane" id="%1$s">',

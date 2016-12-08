@@ -3,7 +3,7 @@
     <!--Search-->
     <section>
         <div class="input-append">
-            <form action="#">
+            <form action="<?php bloginfo( 'url' ); ?>">
                 <input id="appendedInputButton" size="16" name="s" type="text" placeholder="Search">
                 <button class="btn" type="submit"><i class="icon-search"></i></button>
             </form>
