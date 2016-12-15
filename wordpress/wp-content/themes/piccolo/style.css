@@ -1212,8 +1212,12 @@ a.accordion-toggle {
     height: 5px;
 }
 
-.color-bar-2 {
+.color-bar-2, .color-bar-3 {
     height: 3px;
+}
+
+.color-bar-3{
+    background: yellow;
 }
 
 .page-header {
@@ -1356,22 +1360,40 @@ a.accordion-toggle {
 }
 
 /*==========MY======================*/
+#background{
+    background: url(http://img2.goodfon.su/original/1920x1200/a/ae/germaniya-rothenburg-ulica-2244.jpg) no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 1200px;
+    opacity: 0.3;
+    z-index: -999;
+}
+
+body > .container{
+    background-color: rgba(255,255,255,0.8);
+}
+
 #fa_gallery-2 {
     height: 250px;
     overflow: hidden;
 }
 
-ul.footer_menu li {
+
+.footer-container .menu ul{
+    float: right;
+}
+
+.footer-container .menu ul li {
     display: inline-block;
     padding-right: 5px;
     padding-bottom: 0;
 }
-ul.footer_menu li a{
+.footer-container .menu ul li a{
     border-right: 1px solid white;
     padding-right: 10px;
 }
 
-ul.footer_menu li:last-child a{
+.footer-container .menu  ul li:last-child a{
     border: none;
 }
 

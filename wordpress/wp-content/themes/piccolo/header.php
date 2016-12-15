@@ -18,9 +18,11 @@
 </head>
 
 <body class="home">
+<div id="background"></div>
 <!-- Color Bars (above header)-->
 <div class="color-bar-1"></div>
 <div class="color-bar-2 color-bg"></div>
+<div class="color-bar-3"></div>
 
 <div class="container">
 

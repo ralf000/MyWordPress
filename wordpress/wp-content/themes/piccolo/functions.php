@@ -51,7 +51,7 @@ function getIndexPageText($excerpt)
     $list = explode('.', $excerpt, 3);
     return (count($list) < 3)
         ? implode(' ', $list)
-        : '<p class="lead">' . implode('. ', array_slice($list, 0, 2)) . '</p><p>' . substr($list[2], 0, 100) . '...</p>';
+        : '<p class="lead">' . implode('. ', array_slice($list, 0, 2)) . '</p><p>' . substr($list[2], 0, 400) . '...</p>';
 }
 
 /**
